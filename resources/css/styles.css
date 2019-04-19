@@ -4,6 +4,11 @@ html {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+@viewport {
+  zoom: 1.0;
+  width: device-width;
+}
+
 /* typography */
 /* courtesy of http://typecast.com/ */
 
