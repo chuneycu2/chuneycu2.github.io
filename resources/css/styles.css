@@ -188,9 +188,16 @@ nav ul li a:active {
   padding-top: 7.5rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media only screen and (max-width: 31.25rem) {
   .headline {
     padding: 3rem 2.75rem;
+  }
+  .desktop-nav {
+    display: none;
   }
 }
 
