@@ -192,9 +192,44 @@ nav ul li a:active {
   display: none;
 }
 
-@media only screen and (max-width: 31.25rem) {
+.hide {
+  display: none;
+}
+
+.mobile-nav #menu-icon {
+  width: 40px;
+}
+
+@media only screen and (max-width: 31.125rem) {
   .headline {
     padding: 3rem 2.75rem;
+  }
+  ul .desktop-nav {
+    display: none;
+  }
+  .nav-container {
+    display: none;
+  }
+  .mobile-nav {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  #dropdown-nav {
+    position: relative;
+    background-color: #223057;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    color: white;
+  }
+  #dropdown-nav ul li {
+    padding: 1.5rem 0;
+  }
+  #dropdown-nav ul li a {
+    color: white;
   }
 }
 @media only screen and (max-width: 29.375rem) {
