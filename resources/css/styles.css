@@ -155,8 +155,22 @@ header {
   color: white;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  padding-right: 1.25em;
+}
+
 nav a {
   color: white;
+}
+
+nav img {
+  width: 60px;
+  height: 60px;
 }
 
 nav ul {
@@ -178,7 +192,7 @@ nav ul li a:active {
 }
 
 .headline {
-  padding-top: 5rem;
+  padding-top: 4rem;
   margin: 0 auto;
   text-align: center;
   color: white;
@@ -198,9 +212,10 @@ nav ul li a:active {
 
 .mobile-nav #menu-icon {
   width: 40px;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 31.125rem) {
+@media only screen and (max-width: 36.875rem) {
   .headline {
     padding: 3rem 2.75rem;
   }
@@ -230,6 +245,9 @@ nav ul li a:active {
   }
   #dropdown-nav ul li a {
     color: white;
+  }
+  #dropdown-nav ul li a:hover {
+    text-decoration: underline;
   }
 }
 @media only screen and (max-width: 29.375rem) {
@@ -326,20 +344,11 @@ footer {
   background-color: #223057;
 }
 
-footer .bio  {
-  max-width: 50%;
-}
-
-footer .bio img {
-  width: 100px;
-  float: left;
-  margin-right: 1.5em;
-}
-
 .footer-nav {
   padding: 1.5rem 1.5rem 0 1.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   color: white;
 }
 
@@ -355,8 +364,9 @@ footer .bio img {
   text-transform: uppercase;
 }
 
-.footer-nav img {
+.footer-nav ul img {
   width: 40px;
+  height: 40px;
 }
 
 #mobile-footer-nav {
@@ -366,9 +376,6 @@ footer .bio img {
 @media only screen and (max-width: 38.75rem) {
   footer {
     height: 18rem;
-  }
-  footer .bio {
-    max-width: 75%;
   }
   #desktop-footer-nav {
     display: none;
@@ -388,17 +395,5 @@ footer .bio img {
     padding: 0;
     font-weight: bold;
     text-transform: uppercase;
-  }
-}
-@media only screen and (max-width: 33.125rem) {
-  footer .bio {
-    max-width: 80%;
-  }
-  footer .bio p {
-    font-size: 1rem;
-  }
-  footer .bio img {
-    margin-right: 1rem;
-    width: 75px;
   }
 }
