@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cyrus Huneycutt | Design + Development</title>
+  <link rel="shortcut icon" href="./resources/images/ch-favicon.ico" type="image/x-icon">
+  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
+  <link href="./resources/css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <nav class="nav-container set-max">
+      <div class="logo">
+        <a href="index.html">
+          <img id="home-button" src="./resources/images/logo-icon.png" alt="Cyrus Huneycutt" />
+        </a>
+        <p><span>CYRUS HUNEYCUTT</span> <br> Designer | Developer</p>
+      </div>
+      <ul class="desktop-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile-nav">
+      <div class="logo">
+        <a href="index.html"><img src="./resources/images/logo-icon.png" alt="Cyrus Huneycutt" /></a>
+        <p><strong>CYRUS HUNEYCUTT</strong> <br> Designer | Developer</p>
+      </div>
+      <img id="menu-icon" src="./resources/images/menu-icon.svg" alt="hamburger menu icon" />
+    </nav>
+    <div class="dropdown-nav hide">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="headline">
+      <h1>Participate Shopify storefront</h1>
+      <h4>Liquid, CSS, Responsive design</h4>
+    </div>
+  </header>
+  <div class="content-container center">
+    <img class="hero" src="./resources/images/shopify/shopify-overview-01.png" alt="Desktop and mobile views of the Participate Shopify storefront" />
+    <a href="https://participateshop.com/" rel="nofollow" target="_blank"><button>Visit the storefront</button></a>
+      <p>Participate tasked me and a design colleague with managing the company’s Shopify storefront, which features branded swag and classroom items available for purchase through a fulfillment service. I managed the company theme code and website design while my colleague managed photography and new product listings.</p>
+    <h2>Designing the storefront</h2>
+      <p>From the beginning, I was able to manage the appearance of our storefront with Shopify’s theme builder, which is just as robust as Wordpress in terms of the wide level of customization available. Our marketing team ran point with communications and fulfillment, while my team combined our design sense to quickly redesign a storefront that was clean and accessible in the wake of the company rebrand. But I discovered there were some things we wanted to do design-wise that couldn’t be done in the theme builder. </p>
+    <h2>Getting liquid</h2>
+      <p>Shopify storefronts are built with a custom templating language called <a class="body-link" href="https://shopify.github.io/liquid/" rel="nofollow">Liquid</a> that is written in Ruby. I knew little about Ruby going in, but when I got under the hood, I quickly recognized Liquid’s use of HTML elements between Ruby’s curly braces of conditional logic. There were also stylesheets written in the same CSS I was used to. I set up a copy of our store theme as a QA testing site and got busy poking around.</p>
+    <h2>Breaking out of the box</h2>
+      <p>Our theme limited us to three product blocks on our home page. These blocks could be linked to individual products or collections of products, but we didn’t have an immediate way to add more than three. We envisioned a home page that featured all available products in a responsive grid - there weren’t that many different products we had for sale, so categorized collections didn’t make sense. We also wanted control over display properties like borders and padding, which the theme set automatically.</p>
+      <div class="img-row">
+        <div class="img-block">
+          <img src="./resources/images/shopify/shopify-old-01.png" alt="Old Shopify storefront design" />
+        </div>
+        <div class="img-block">
+          <img src="./resources/images/shopify/shopify-wireframe-01.png" alt="Wireframe sketch of the product grid and simple menu we wanted" />
+        </div>
+      </div>
+      <div class="notation">
+        <p>An intermediate photo choice worked well, but it didn't mesh with the default menu. The item grid needed a redesign.</p>
+      </div>
+      <p>I experimented on the QA theme I’d set up and dissected the index.liquid file that structured our home page. Fortunately, the theme classes were descriptive (a good lesson for future me in writing meaningful class names), and I found the structure responsible for setting our three featured products. Inside a conditional bracket that determined whether featured image settings were active, a parent div controlled each of three divs that contained image and link elements mixed with dynamic liquid tags.</p>
+      <div class="img-row">
+        <div class="img-block">
+          <img src="./resources/images/shopify/shopify-three-blocks-01.png" alt="Three blocks in Shopify storefront" />
+        </div>
+        <div class="img-block">
+          <img src="./resources/images/shopify/shopify-three-blocks-code-01.png" alt="Code controlling the three product blocks" />
+        </div>
+      </div>
+      <div class="notation">
+        <p>Within a liquid tag, I could add as many new product object copies as we needed</p>
+      </div>
+      <p>It took some trial and error to discern how certain classes behaved. It became clear that an .alpha and .omega class determined the starting and ending blocks in a row respectively, while the parent container’s .clearfix class allowed subsequent divs to start new rows instead of nesting them within previous ones. Additionally, the properties inside liquid tags needed to be updated each time a new featured item was created so that the pages and images linked together correctly. These new key-value pairs needed to be added in a JSON file to render correctly. There were a lot more moving parts than I expected.</p>
+    <h2>Documentation</h2>
+      <p>After several instances of adding new products, my colleague offered to take on this task if I could teach him how the code was structured. I agreed to write documentation describing what I changed and how to change it.</p>
+      <p>Writing documentation is a fun test of one’s knowledge, because it just can’t be done effectively if you don’t understand what you’re writing about. I had to gather and present my knowledge in a way that a non-developer could understand. I found that helping a fellow designer learn to update code was best done with color coding (no pun intended).</p>
+    <img class="hero" src="./resources/images/shopify/shopify-documentation-01.png" alt="Snapshot of color-coded documentation written for a design colleague" />
+    <div class="notation">
+      <p>Snapshot of color-coded documentation written for my colleague</p>
+    </div>
+    <h2>Results</h2>
+      <p>We made design upgrades to the storefront with our new item grid and a cleaner user experience. I take no credit for the excellent product photography!</p>
+    <img class="hero" src="./resources/images/shopify/shopify-final-01.png" alt="Final view of the storefront redesign" />
+  </div>
+  <div class="project-cta">
+    <a href="contact.html">
+      <h2 class="center">Get in touch &rarr;</h2>
+    </a>
+  </div>
+  <!-- footer -->
+  <footer>
+    <nav class="nav-container set-max">
+      <div class="logo">
+        <a href="index.html">
+          <img id="footer-button" src="./resources/images/logo-icon-close.png" alt="Cyrus Huneycutt" />
+        </a>
+        <p><span>CYRUS HUNEYCUTT</span> <br> Designer | Developer</p>
+      </div>
+      <ul class="desktop-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile-footer">
+      <div class="logo">
+        <a href="index.html">
+          <img id="home-button" src="./resources/images/logo-icon-close.png" alt="Cyrus Huneycutt" />
+        </a>
+        <p><span>CYRUS HUNEYCUTT</span> <br> Designer | Developer</p>
+      </div>
+      <ul class="desktop-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <ul>
+        <li><a href="https://github.com/chuneycu2" rel="nofollow" target="_blank"><img src="./resources/images/social-github.png" alt="GitHub icon" /></a></li>
+        <li><a href="https://www.linkedin.com/in/cyrus-huneycutt-645a5647/" rel="nofollow" target="_blank"><img src="./resources/images/social-linkedin.png" alt="LinkedIn icon" /></li>
+        <li><a href="contact.html" rel="nofollow"><img src="./resources/images/social-gmail.png" alt="Gmail icon" /></a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2019 Cyrus Huneycutt</p>
+    </div>
+  </footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+</html>
