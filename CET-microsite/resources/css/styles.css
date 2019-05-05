@@ -1,0 +1,357 @@
+/* desktop styles */
+
+body, html, .w3-container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+}
+p {
+    font-size: 1.3em;
+    line-height: 1.7em;
+}
+h1 {
+    font-family: 'MetropolisBold';
+    margin: 0;
+    line-height: 1.25em;
+    color: #223057;
+}
+ul.positions {
+    list-style-image: url('../../resources/images/checkmark_modified.png');
+    font-size: 1.4em;
+    line-height: 1.8em;
+}
+ul.requirements {
+    list-style-image: url('../../resources/images/checkmark_modified.png');
+    font-size: 1.4em;
+    line-height: 1.8em;
+}
+li {
+    padding-bottom: 15px;
+}
+a {
+    color: #217ded;
+    text-decoration: none;
+}
+.hero-image {
+    background-image: url('../../resources/images/hero-main_1080.png');
+    width: 100%;
+    height: 100%;
+    max-height: 428px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heroPadding {
+    padding: 20px 30px 20px 30px;
+}
+.heroCTA {
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px black;
+}
+.mobileHeadline {
+    color: #ffffff;
+    font-size: 3.2em;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+.heroCTA-subhead {
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+    line-height: 32px;
+    padding-top: 8px;
+}
+.headlineSubhead {
+    color: #223057;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    line-height: 32px;
+}
+.buttonPadding {
+    padding: 15px 70px;
+}
+.w3-button {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.header-content {
+    width: 100%;
+    height: 100px;
+    vertical-align: middle;
+}
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 20px 10px 20px;
+}
+
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ffffff;
+    color: #217ded;
+}
+.headline {
+    align: center;
+    font-weight: bold;
+    padding: 30px 0 0 0;
+}
+.anchorMenu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 25px;
+}
+.anchorImage {
+    width: 100%;
+    max-width: 350px;
+}
+.anchorImage:hover {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.2);
+}
+.anchorImageMobile {
+    width: 100%;
+}
+.statesInfo {
+    padding: 25px 0 40px 0;
+}
+.heroShare {
+    background-image: url('../../resources/images/share-your-culture.png');
+    width: 100%;
+    height: 100%;
+    max-height: 428px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shareHeadline {
+    color: #ffffff;
+    font-size: 2.2em;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    line-height: 34px;
+    text-shadow: 2px 2px black;
+    padding: 0 0 30px 0;
+}
+.w3-display-bottommiddle {
+    width: 100%;
+}
+.positionsImage {
+    width: 100%;
+    padding: 0 25px;
+    margin: 21px 0;
+}
+.heroSupport {
+    background-image: url('../../resources/images/participate-teachers.png');
+    width: 100%;
+    height: 100%;
+    max-height: 815px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.w3-display-topleft {
+    padding: 50px 25px;
+}
+.waitingHeadline {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0;
+    align: left;
+    line-height: 34px;
+    padding: 0 0 25px 0;
+}
+.requirementsRow {
+    padding: 20px 0 20px 0;
+}
+.footer {
+    background-color: #e7f0f7;
+    width: 100%;
+}
+.footerLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0 0 0;
+}
+.footerIcons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0 20px 0;
+}
+.socialIcon {
+    padding: 15px;
+}
+.w3-sidebar {
+    height: inherit;
+}
+.w3-display-topleft {
+    padding: 50px 0px 50px 25px;
+}
+
+/* mobile styles toggled off for desktop */
+
+.mobilenav {
+    display: none;
+}
+.tabletStudent03 {
+    display: none;
+}
+.heroSupportMobile {
+    display: none;
+}
+.positionsImageTablet {
+    display: none;
+}
+.heroShareMobile {
+    display: none;
+}
+.anchorMenuMobile {
+    display: none;
+}
+.mobileHero {
+    display: none;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+    .anchorImage {
+        padding: 20px;
+    }
+    .anchorMenu {
+        padding: 20px 0 0 0;
+    }
+    .statesInfo {
+        padding: 20px 0 35px 0;
+    }
+    .statesMap {
+        margin: 50px 0;
+        width: 100%;
+    }
+    .positionsImage {
+        display: none;
+    }
+    .positionsImageTablet {
+        display: block;
+        padding: 0 25px;
+        margin: 21px 0;
+        width: 100%;
+    }
+    .requirementsRow {
+        padding: 20px 0;
+    }
+    .tabletStudent03 {
+        display: block;
+    }
+}
+@media only screen and (max-width: 934px) {
+    .mobilenav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .hero-image {
+        display: none;
+    }
+    .mobileHero {
+        display: block;
+        background-image: url('../../resources/images/hero_mobile.png');
+        width: 100%;
+        max-height: 741px;
+        background-position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .anchorMenu {
+        display: none;
+    }
+    .anchorMenuMobile {
+        display: block;
+        width: 100%;
+        padding-top: 25px;
+    }
+    .heroShare {
+        display: none;
+    }
+    .heroShareMobile {
+        display: block;
+        padding: 15px 0;
+    }
+    .positionTitle {
+        padding: 7px 7px;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .positionsHeadline {
+        display: none;
+    }
+    .positionsHeadlineMobile {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .positionsList {
+        display: none;
+    }
+    h1.headline {
+        padding-top: 0px;
+    }
+    h1.mobileHeadline {
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .statesInfo {
+        padding: 20px 0 0 0;
+    }
+    .footerIcons {
+        padding: 2px;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+    .tabletWidth {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .heroSupport {
+        display: none;
+    }
+    .heroSupportMobile {
+        display: block;
+        background-image: url('../../resources/images/supportHero_mobile.png');
+        width: 100%;
+        max-height: 1234px;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mobileCenter {
+        text-align: center;
+    }
+}
