@@ -5,26 +5,92 @@ $(document).ready(() => {
   $('#menu-icon').on('click', () => {
     $('.dropdown-nav').slideToggle('fast', 'swing');
   });
-  /* project hover states */
-  $('#p1').hover(function() {
-    $('#t1').slideToggle('fast', 'swing');
+  /* hover states for project grid */
+  $('#p1-img').mouseover(function() {
+    $('#icon-01').stop().fadeOut()
+  }).mouseout(function() {
+    $('#icon-01').stop().fadeIn()
+  })
+  $('#p1-img').mouseover(function() {
+    $('#p1-bg').stop().fadeIn()
+  }).mouseout(function() {
+    $('#p1-bg').stop().fadeOut()
   });
-  $('#p2').hover(function() {
-    $('#t2').slideToggle('fast', 'swing');
+
+  $('#p2-img').mouseover(function() {
+    $('#icon-02').stop().fadeOut()
+  }).mouseout(function() {
+    $('#icon-02').stop().fadeIn()
+  })
+  $('#p2-img').mouseover(function() {
+    $('#p2-bg').stop().fadeIn()
+  }).mouseout(function() {
+    $('#p2-bg').stop().fadeOut()
   });
-  $('#p3').hover(function() {
-    $('#t3').slideToggle('fast', 'swing');
+
+  $('#p3-img').mouseover(function() {
+    $('#icon-03').stop().fadeOut()
+  }).mouseout(function() {
+    $('#icon-03').stop().fadeIn()
+  })
+  $('#p3-img').mouseover(function() {
+    $('#p3-bg').stop().fadeIn()
+  }).mouseout(function() {
+    $('#p3-bg').stop().fadeOut()
   });
-  $('#p4').hover(function() {
-    $('#t4').slideToggle('fast', 'swing');
+
+  $('#p4-img').mouseover(function() {
+    $('#icon-04').stop().fadeOut()
+  }).mouseout(function() {
+    $('#icon-04').stop().fadeIn()
+  })
+  $('#p4-img').mouseover(function() {
+    $('#p4-bg').stop().fadeIn()
+  }).mouseout(function() {
+    $('#p4-bg').stop().fadeOut()
   });
-  $('#p5').hover(function() {
-    $('#t5').slideToggle('fast', 'swing');
+
+  $('#p5-img').mouseover(function() {
+    $('#icon-05').stop().fadeOut()
+  }).mouseout(function() {
+    $('#icon-05').stop().fadeIn()
+  })
+  $('#p5-img').mouseover(function() {
+    $('#p5-bg').stop().fadeIn()
+  }).mouseout(function() {
+    $('#p5-bg').stop().fadeOut()
   });
-  $('#p6').hover(function() {
-    $('#t6').slideToggle('fast', 'swing');
+
+  $('#p6-img').mouseover(function() {
+    $('#icon-06').stop().fadeOut()
+  }).mouseout(function() {
+    $('#icon-06').stop().fadeIn()
+  })
+  $('#p6-img').mouseover(function() {
+    $('#p6-bg').stop().fadeIn()
+  }).mouseout(function() {
+    $('#p6-bg').stop().fadeOut()
   });
-  /* home button animation */
+
+
+  /*$('#p1-img').mouseover(function() {
+    $('#icon-01').fadeToggle(300)
+  }).mouseout(function() {
+    $('#icon-01').fadeToggle(300)
+  });
+  $('#p1-img').mouseover(function() {
+    $(this).toggleClass('one')
+  }).mouseout(function() {
+    $(this).toggleClass('one')
+  });*/
+  /*
+  $('#p1-img').mouseover(function() {
+    $(this).css('background-image', "url('./resources/images/home/project-hover-bg-01.png')")
+  }).mouseout(function() {
+    $(this).css('background-image', 'url()')
+  });*/
+
+
   $("#home-button").mouseover(function() {
     this.src="./resources/images/logo-icon-active.png"
   }).mouseout(function() {
@@ -37,7 +103,6 @@ $(document).ready(() => {
     this.src="./resources/images/logo-icon-close.png"
   });
 });
-
 /* JS tab functionality */
 
 function openCity(evt, cityName) {
