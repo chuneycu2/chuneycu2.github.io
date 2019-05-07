@@ -1,11 +1,30 @@
-/* jQuery */
+/* jQuery interactions */
 
 $(document).ready(() => {
+
+  /* grid fade in on load */
+
+  $('#one').fadeIn({ queue: false, duration: 300 });
+  $('#one').animate({ bottom: "25px" }, 300);
+  $('#two').fadeIn({ queue: false, duration: 500 });
+  $('#two').animate({ bottom: "25px" }, 500);
+  $('#three').fadeIn({ queue: false, duration: 750 });
+  $('#three').animate({ bottom: "25px" }, 750);
+  $('#four').fadeIn({ queue: false, duration: 1000 });
+  $('#four').animate({ bottom: "25px" }, 1000);
+  $('#five').fadeIn({ queue: false, duration: 1250 });
+  $('#five').animate({ bottom: "25px" }, 1250);
+  $('#six').fadeIn({ queue: false, duration: 1500 });
+  $('#six').animate({ bottom: "25px" }, 1500);
+
   /* mobile nav dropdown */
+
   $('#menu-icon').on('click', () => {
     $('.dropdown-nav').slideToggle('fast', 'swing');
   });
+
   /* hover states for project grid */
+
   $('#p1-img').mouseover(function() {
     $('#icon-01').stop().fadeOut()
   }).mouseout(function() {
@@ -71,7 +90,6 @@ $(document).ready(() => {
   }).mouseout(function() {
     $('#p6-bg').stop().fadeOut()
   });
-
 
   /*$('#p1-img').mouseover(function() {
     $('#icon-01').fadeToggle(300)
