@@ -324,6 +324,9 @@ nav ul li a:active {
   .dropdown-nav ul li a:hover {
     text-decoration: underline;
   }
+  .headline h4 {
+    padding: 0 1.5rem;
+  }
 }
 
 /* page headline styles */
