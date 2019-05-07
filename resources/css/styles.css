@@ -1,6 +1,6 @@
 html {
   font-size: 16px;
-  background-color: white;
+  background-color: #eeeeee;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -152,14 +152,14 @@ blockquote {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px #d2d6db;
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #217ded;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 /* Handle on hover */
@@ -232,7 +232,10 @@ blockquote {
 
 header {
   height: 300px;
-  background-color: #223057;
+  background-image: url('../../resources/images/home/header-texture-01.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav-container {
@@ -338,20 +341,33 @@ nav ul li a:active {
 
 /* home page portfolio item grid */
 
+.grid {
+  position: relative;
+  top: 30px;
+}
+
 .portfolio-item {
   width: 31.4%;
   height: 291px;
-  border: 1px solid #223057;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #ffffff;
+  /* border: 1px solid #223057; */
+  position: relative;
   margin-bottom: 1.4%;
+}
+
+.portfolio-link {
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio-item img {
   width: 100px;
   height: 100px;
+}
+
+.portfolio-item:hover {
+  box-shadow: 1px 1px 4.5px gray;
+  transition: 0.15s;
 }
 
 .project-image {
@@ -363,10 +379,10 @@ nav ul li a:active {
 }
 
 .project-label {
-  background-color: #dcdfe4;
+  background-color: #d2d6db;
   height: 25%;
   width: 100%;
-  border-top: 1px solid #223057;
+  /* border-top: 1px solid #223057; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -473,6 +489,21 @@ nav ul li a:active {
     width: 96%;
     margin: 1.5% 0;
   }
+  #p2-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-02.png');
+  }
+  #p3-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-03.png');
+  }
+  #p4-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-04.png');
+  }
+  #p5-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-05.png');
+  }
+}
+
+@media only screen and (min-width: 87.5rem) {
   #p2-bg {
     background-image: url('../../resources/images/home/project-hover-bg-wide-02.png');
   }
@@ -618,7 +649,7 @@ button:active {
 .tab {
   padding-top: 2rem;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: ##eeeeee;
   display: flex;
   justify-content: space-between;
 }
@@ -653,8 +684,11 @@ button:active {
 /* footer styles */
 
 footer {
-  height: 14.5rem;
-  background-color: #223057;
+  height: 17.5rem;
+  background-image: url('../../resources/images/home/footer-texture-01.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer .desktop-nav {
@@ -678,10 +712,12 @@ footer .nav-container {
 .social {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .social ul {
   display: flex;
+  justify-content: center;
 }
 
 .social ul li {
@@ -697,7 +733,6 @@ footer .nav-container {
   padding: 1.5rem 0;
   color: white;
   text-align: center;
-  background-color: #223057;
 }
 
 .copyright p {
@@ -706,7 +741,7 @@ footer .nav-container {
 
 @media only screen and (max-width: 36.875rem) {
   footer {
-    height: 20rem;
+    height: 23rem;
   }
   footer .desktop-nav {
     flex-direction: row;

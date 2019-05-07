@@ -8,14 +8,14 @@ $(document).ready(() => {
   $('#one').animate({ bottom: "25px" }, 300);
   $('#two').fadeIn({ queue: false, duration: 500 });
   $('#two').animate({ bottom: "25px" }, 500);
-  $('#three').fadeIn({ queue: false, duration: 750 });
-  $('#three').animate({ bottom: "25px" }, 750);
-  $('#four').fadeIn({ queue: false, duration: 1000 });
-  $('#four').animate({ bottom: "25px" }, 1000);
-  $('#five').fadeIn({ queue: false, duration: 1250 });
-  $('#five').animate({ bottom: "25px" }, 1250);
-  $('#six').fadeIn({ queue: false, duration: 1500 });
-  $('#six').animate({ bottom: "25px" }, 1500);
+  $('#three').fadeIn({ queue: false, duration: 700 });
+  $('#three').animate({ bottom: "25px" }, 700);
+  $('#four').fadeIn({ queue: false, duration: 800 });
+  $('#four').animate({ bottom: "25px" }, 800);
+  $('#five').fadeIn({ queue: false, duration: 900 });
+  $('#five').animate({ bottom: "25px" }, 900);
+  $('#six').fadeIn({ queue: false, duration: 1000 });
+  $('#six').animate({ bottom: "25px" }, 1000);
 
   /* mobile nav dropdown */
 
