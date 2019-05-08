@@ -325,8 +325,8 @@ nav ul li a:active {
     text-decoration: underline;
   }
   .headline h4 {
-    padding: 0 2rem;
-    line-height: 1.2;
+    padding: 1rem 2rem 0 2rem;
+    line-height: 1.3;
   }
 }
 
