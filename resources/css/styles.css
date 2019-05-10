@@ -374,10 +374,10 @@ nav ul li a:active {
   height: 100px;
 }
 
-.portfolio-item:hover {
+/*.portfolio-item:hover {
   box-shadow: 1px 1px 4.5px gray;
   transition: 0.5s;
-}
+}*/
 
 .project-image {
   width: 100%;
