@@ -4,17 +4,17 @@ $(document).ready(() => {
 
   /* grid fade in on load */
 
-  $('#one').fadeIn({ queue: false, duration: 300 });
+  $('#one').fadeIn({ queue: false, duration: 700 });
   $('#one').animate({ bottom: "25px" }, 300);
-  $('#two').fadeIn({ queue: false, duration: 500 });
+  $('#two').fadeIn({ queue: false, duration: 700 });
   $('#two').animate({ bottom: "25px" }, 500);
   $('#three').fadeIn({ queue: false, duration: 700 });
   $('#three').animate({ bottom: "25px" }, 700);
-  $('#four').fadeIn({ queue: false, duration: 800 });
+  $('#four').fadeIn({ queue: false, duration: 700 });
   $('#four').animate({ bottom: "25px" }, 800);
-  $('#five').fadeIn({ queue: false, duration: 900 });
+  $('#five').fadeIn({ queue: false, duration: 700 });
   $('#five').animate({ bottom: "25px" }, 900);
-  $('#six').fadeIn({ queue: false, duration: 1000 });
+  $('#six').fadeIn({ queue: false, duration: 700 });
   $('#six').animate({ bottom: "25px" }, 1000);
 
   /* mobile nav dropdown */
