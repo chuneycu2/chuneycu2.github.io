@@ -361,6 +361,7 @@ nav ul li a:active {
   background-color: #ffffff;
   position: relative;
   margin-bottom: 1.4%;
+  /*transition: 0.5s;*/
 }
 
 .portfolio-link {
@@ -375,7 +376,7 @@ nav ul li a:active {
 
 .portfolio-item:hover {
   box-shadow: 1px 1px 4.5px gray;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .project-image {
@@ -390,7 +391,6 @@ nav ul li a:active {
   background-color: #d2d6db;
   height: 25%;
   width: 100%;
-  /* border-top: 1px solid #223057; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -737,6 +737,15 @@ figure img {
 
 /* Contact page styles */
 
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row p {
+  width: 45%;
+}
+
 form p {
   display: flex;
   flex-direction: column;
@@ -748,12 +757,13 @@ label {
 
 input {
   font-size: 1rem;
-}
-
-input[name=firstname], input[name=lastname], input[type=email] {
   height: 1.5rem;
   padding: 0.5rem;
-  width: 40%;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #2b75e3;
 }
 
 textarea {
@@ -769,6 +779,29 @@ textarea[placeholder] {
 button:hover {
   background-color: #67a7f4;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 33.125rem) {
+  input, textarea {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 43.75rem) {
+  .form-row {
+    display: block;
+  }
+  .form-row p {
+    width: 100%;
+  }
+  #submission {
+    display: flex;
+    align-items: center;
+  }
+  #submission button {
+    width: 50%;
+    height: 70px;
+  }
 }
 
 /* footer styles */

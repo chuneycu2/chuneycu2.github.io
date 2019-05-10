@@ -80,6 +80,7 @@ $(document).ready(() => {
     $('#p5-bg').stop().fadeOut()
   });
 
+
   $('#p6-img').mouseover(function() {
     $('#icon-06').stop().fadeOut()
   }).mouseout(function() {
@@ -90,23 +91,7 @@ $(document).ready(() => {
   }).mouseout(function() {
     $('#p6-bg').stop().fadeOut()
   });
-
-  /*$('#p1-img').mouseover(function() {
-    $('#icon-01').fadeToggle(300)
-  }).mouseout(function() {
-    $('#icon-01').fadeToggle(300)
-  });
-  $('#p1-img').mouseover(function() {
-    $(this).toggleClass('one')
-  }).mouseout(function() {
-    $(this).toggleClass('one')
-  });*/
-  /*
-  $('#p1-img').mouseover(function() {
-    $(this).css('background-image', "url('./resources/images/home/project-hover-bg-01.png')")
-  }).mouseout(function() {
-    $(this).css('background-image', 'url()')
-  });*/
+  
 
 
   $("#home-button").mouseover(function() {
