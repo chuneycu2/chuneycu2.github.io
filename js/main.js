@@ -91,7 +91,7 @@ $(document).ready(() => {
   }).mouseout(function() {
     $('#p6-bg').stop().fadeOut()
   });
-  
+
 
 
   $("#home-button").mouseover(function() {
@@ -106,6 +106,7 @@ $(document).ready(() => {
     this.src="./resources/images/logo-icon-close.png"
   });
 });
+
 /* JS tab functionality */
 
 function openCity(evt, cityName) {
