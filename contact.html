@@ -48,26 +48,28 @@ if($_POST["message"]) {
     </div>
   </header>
   <div class="content-container">
-  <p>If you haven't already, take a look at my portfolio or my skills to get an idea of what I can do for you. Shoot me a note and let's connect!</p>
+  <p>If you haven't already, take a look at my <a href="home.html">portfolio</a> or my <a href="about.html">skills</a> to get an idea of what I can do for you. Shoot me a note and let's connect!</p>
   <h3>About you</h3>
   <form method="post" action="https://formspree.io/chuneycu@gmail.com">
+    <div class="form-row">
+      <p>
+        <label for="First-name">First name</label>
+        <input name="First-name" id="first" type="text">
+      </p>
+      <p>
+        <label for="Last-name">Last name</label>
+        <input name="Last-name" id="last" type="text">
+      </p>
+    </div>
     <p>
-      <label for="name">First name</label>
-      <input name="First-name" id="first" type="text">
-    </p>
-    <p>
-      <label for="last">Last name</label>
-      <input name="Last-name" id="last" type="text">
-    </p>
-    <p>
-      <label for="last">Email</label>
+      <label for="_replyto">Email</label>
       <input name="_replyto" id="email" type="email">
     </p>
     <p>
-      <label for="message">Message</label>
+      <label for="Message">Message</label>
       <textarea name="Message" id="message" type="text" placeholder="Your message here"></textarea>
     </p>
-    <p>
+    <p id="submission">
       <button id="submit" type="submit" value="Send">Send</button>
     </p>
   </form>
