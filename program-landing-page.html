@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cyrus Huneycutt | Shopify storefront design</title>
+  <title>Cyrus Huneycutt | Program landing page</title>
   <link rel="shortcut icon" href="./resources/images/ch-favicon.ico" type="image/x-icon">
   <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
   <link href="./resources/css/styles.css" type="text/css" rel="stylesheet" />
@@ -38,57 +38,45 @@
       </ul>
     </div>
     <div class="headline">
-      <h1>Shopify storefront design</h1>
-      <h4>Liquid, CSS, Responsive design</h4>
+      <h1>Program landing page</h1>
+      <h4>HTML5, CSS, JavaScript, Responsive design</h4>
     </div>
   </header>
   <div class="content-container center">
-    <img class="hero" src="./resources/images/shopify/shopify-overview-01.png" alt="Desktop and mobile views of the Participate Shopify storefront" />
-    <a href="https://participateshop.com/" rel="nofollow" target="_blank"><button>Visit the storefront</button></a>
-      <p>I worked with a colleague to build the company’s Shopify storefront. I managed the theme code and website design while my colleague managed photography and new product listings.</p>
-    <h2>Designing the storefront</h2>
-      <p>I saw that Liquid displays HTML elements with logic written in Ruby. I was able to take full control of finer details with existing CSS stylesheets.</p>
-      <p>I envisioned a home page that featured all available products in a responsive grid. Shopify's pre-built theme only allowed us to add three featured items, so I adjusted the theme template code to add more.</p>
-      <div class="img-row">
-        <div class="img-block">
-          <img src="./resources/images/shopify/shopify-old-01.png" alt="Old Shopify storefront design" />
-        </div>
-        <div class="img-block">
-          <img src="./resources/images/shopify/shopify-wireframe-01.png" alt="Wireframe sketch of the product grid and simple menu I wanted" />
-        </div>
+    <img class="hero" src="./resources/images/microsite/microsite-overview-01.png" alt="Desktop and mobile views of Teach in the USA microsite" />
+    <a href="./CET-microsite/index.html" rel="nofollow" target="_blank"><button>See the site</button></a>
+    <p>I built a stand-alone webpage to serve as an intermediate for the company’s exchange teacher program as it transitioned its brand and assets during a company rebrand.</p>
+    <p>The company's old website was no longer on-brand, and a new Wordpress theme was still under construction by a third party contractor. I was given a one-week timetable to design, build and test a webpage for the program while the new site was being set up.</p>
+    <h2>Design and function</h2>
+    <p>The goal of the landing page was to provide needed details to educators interested in applying to teach with the program. I began with sketches and layout, bringing together a wireframe that was more modern and vector-driven than designs in the previous brand.</p>
+    <div class="img-row">
+      <div class="img-block">
+        <img src="./resources/images/microsite/wireframe_desktop-01.png" alt="Teach in the USA wireframe" />
       </div>
-      <div class="notation">
-        <p>An intermediate photo choice worked well, but it didn't mesh with the default menu.</p>
+      <div class="img-block">
+        <img src="./resources/images/microsite/mockup_desktop-01.png" alt="school locations pages" />
       </div>
-      <p>I set up a copy of our theme for QA testing and found the sections of code I needed to change. Once I understood how the theme was built, I used existing pieces of code to structure a new home page design.</p>
-      <div class="img-row">
-        <div class="img-block">
-          <img src="./resources/images/shopify/shopify-three-blocks-01.png" alt="Three blocks in Shopify storefront" />
-        </div>
-        <div class="img-block">
-          <img src="./resources/images/shopify/shopify-three-blocks-code-01.png" alt="Code controlling the three product blocks" />
-        </div>
-      </div>
-      <div class="notation">
-        <p>Within a liquid tag, I could add as many new product object copies as we needed</p>
-      </div>
-      <p>The properties inside liquid tags needed to be updated each time a new featured item was created so that the pages and images linked together correctly. I added these new key-value pairs in a JSON file so they would render on screen.</p>
-    <h2>Documentation</h2>
-      <p>After several instances of updating the code on my own, I wrote documentation on the process for my colleague so that he could take ownership of the storefront and free up my time to address other issues.</p>
-    <img class="hero" src="./resources/images/shopify/shopify-documentation-01.png" alt="Snapshot of color-coded documentation written for a design colleague" />
-    <div class="notation">
-      <p>Snapshot of color-coded documentation written for my colleague</p>
     </div>
+    <h2>Development</h2>
+    <p>I knew that writing my own styles from scratch would take more time than I had. I tapped into <a href="https://www.w3schools.com/w3css/" target="_blank">W3.CSS</a> to set up a ready-to-use framework of responsive styles built with a focus on mobile displays, a key consideration for our audience. This gave me the tools I needed to flesh out a skeleton in HTML and set up responsive design for all of the content in the mockup I designed.</p>
+    <h2>Bells and whistles</h2>
+    <p>With my remaining time, I added jQuery to my anchors across the page to allow the page to scroll smoothly up or down, since the sub menu linked to sections throughout the page. I finished with hover states for the CTA buttons to give the page some basic interactivity.</p>
     <h2>Results</h2>
-      <p>Overall, our design upgrades resulted in a cleaner user experience and an easy reference for all products the company had on sale.</p>
-    <img class="hero" src="./resources/images/shopify/shopify-final-01.png" alt="Final view of the storefront redesign" />
+    <p>The landing page served as an intermediate website until our new Wordpress instance was ready for build out. The webpage got more than 541,919 page views during this time.</p>
+    <img class="hero" src="./resources/images/microsite/microsite-results-01.png" alt="Results view" />
+    </div>
   </div>
+
+  <!-- end page content -->
+
   <div class="project-cta">
     <a href="contact.html">
       <h2 class="center">Get in touch &rarr;</h2>
     </a>
   </div>
+
   <!-- footer -->
+
   <footer>
     <nav class="nav-container set-max">
       <div class="logo">
@@ -133,4 +121,5 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/main.js"></script>
+
 </html>
