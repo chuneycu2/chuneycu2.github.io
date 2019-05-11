@@ -4,93 +4,24 @@ $(document).ready(() => {
 
   /* grid fade in on load */
 
-  $('#one').fadeIn({ queue: false, duration: 700 });
-  $('#one').animate({ bottom: "50px" }, 300);
-  $('#two').fadeIn({ queue: false, duration: 700 });
-  $('#two').animate({ bottom: "50px" }, 500);
-  $('#three').fadeIn({ queue: false, duration: 700 });
-  $('#three').animate({ bottom: "50px" }, 700);
-  $('#four').fadeIn({ queue: false, duration: 700 });
-  $('#four').animate({ bottom: "50px" }, 800);
-  $('#five').fadeIn({ queue: false, duration: 700 });
-  $('#five').animate({ bottom: "50px" }, 900);
-  $('#six').fadeIn({ queue: false, duration: 700 });
-  $('#six').animate({ bottom: "50px" }, 1000);
+  $('#project-one').fadeIn({ queue: false, duration: 700 });
+  $('#project-one').animate({ bottom: "50px" }, 300);
+  $('#project-two').fadeIn({ queue: false, duration: 700 });
+  $('#project-two').animate({ bottom: "50px" }, 500);
+  $('#project-three').fadeIn({ queue: false, duration: 700 });
+  $('#project-three').animate({ bottom: "50px" }, 700);
+  $('#project-four').fadeIn({ queue: false, duration: 700 });
+  $('#project-four').animate({ bottom: "50px" }, 800);
+  $('#project-five').fadeIn({ queue: false, duration: 700 });
+  $('#project-five').animate({ bottom: "50px" }, 900);
+  $('#project-six').fadeIn({ queue: false, duration: 700 });
+  $('#project-six').animate({ bottom: "50px" }, 1000);
 
   /* mobile nav dropdown */
 
   $('#menu-icon').on('click', () => {
     $('.dropdown-nav').slideToggle('fast', 'swing');
   });
-
-  /* hover states for project grid */
-
-  /*$('#p1-img').mouseover(function() {
-    $('#icon-01').stop().fadeOut()
-  }).mouseout(function() {
-    $('#icon-01').stop().fadeIn()
-  })
-  $('#p1-img').mouseover(function() {
-    $('#p1-bg').stop().fadeIn()
-  }).mouseout(function() {
-    $('#p1-bg').stop().fadeOut()
-  });
-
-  $('#p2-img').mouseover(function() {
-    $('#icon-02').stop().fadeOut()
-  }).mouseout(function() {
-    $('#icon-02').stop().fadeIn()
-  })
-  $('#p2-img').mouseover(function() {
-    $('#p2-bg').stop().fadeIn()
-  }).mouseout(function() {
-    $('#p2-bg').stop().fadeOut()
-  });
-
-  $('#p3-img').mouseover(function() {
-    $('#icon-03').stop().fadeOut()
-  }).mouseout(function() {
-    $('#icon-03').stop().fadeIn()
-  })
-  $('#p3-img').mouseover(function() {
-    $('#p3-bg').stop().fadeIn()
-  }).mouseout(function() {
-    $('#p3-bg').stop().fadeOut()
-  });
-
-  $('#p4-img').mouseover(function() {
-    $('#icon-04').stop().fadeOut()
-  }).mouseout(function() {
-    $('#icon-04').stop().fadeIn()
-  })
-  $('#p4-img').mouseover(function() {
-    $('#p4-bg').stop().fadeIn()
-  }).mouseout(function() {
-    $('#p4-bg').stop().fadeOut()
-  });
-
-  $('#p5-img').mouseover(function() {
-    $('#icon-05').stop().fadeOut()
-  }).mouseout(function() {
-    $('#icon-05').stop().fadeIn()
-  })
-  $('#p5-img').mouseover(function() {
-    $('#p5-bg').stop().fadeIn()
-  }).mouseout(function() {
-    $('#p5-bg').stop().fadeOut()
-  });
-
-
-  $('#p6-img').mouseover(function() {
-    $('#icon-06').stop().fadeOut()
-  }).mouseout(function() {
-    $('#icon-06').stop().fadeIn()
-  })
-  $('#p6-img').mouseover(function() {
-    $('#p6-bg').stop().fadeIn()
-  }).mouseout(function() {
-    $('#p6-bg').stop().fadeOut()
-  }); */
 
   /* header home button animation */
 
