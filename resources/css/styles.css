@@ -251,15 +251,21 @@ header {
   align-items: center;
 }
 
+.logo p {
+  font-size: 1.15rem;
+}
+
 .logo img {
-  padding-right: 1.25em;
+  padding-right: 0.7rem;
+  position: relative;
+  bottom: 14px;
 }
 
 /* navigation styles */
 
 nav img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 nav a {
@@ -298,26 +304,29 @@ nav ul li a:active {
     display: none;
   }
   .mobile-nav {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1.2rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
   }
   .mobile-nav #menu-icon {
-    width: 40px;
+    width: 45px;
     cursor: pointer;
+  }
+  header p {
+    display: none;
   }
   .dropdown-nav {
     position: relative;
-    background-color: #217ded;
+    background-color: #2b75e3;
     width: 100%;
     z-index: 1;
     text-align: center;
     color: white;
   }
   .dropdown-nav ul li {
-    padding: 1.45rem 0;
+    padding: 1.38rem 0;
     border-bottom: 1px solid #4a5266;
   }
   .dropdown-nav ul li a {
@@ -394,7 +403,7 @@ nav ul li a:active {
 }
 
 .project-label {
-  background-color: #d2d6db;
+  background-color: #bec3c6;
   height: 25%;
   width: 100%;
   text-align: center;
@@ -413,17 +422,6 @@ nav ul li a:active {
 
 .skills {
   font-size: 1rem;
-}
-
-#icon-01,
-#icon-02,
-#icon-03,
-#icon-04,
-#icon-05,
-#icon-06 {
-  display: none;
-  z-index: 1;
-  position: absolute;
 }
 
 #p1-bg {

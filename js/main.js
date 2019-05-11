@@ -34,9 +34,9 @@ $(document).ready(() => {
   /* footer home button animation */
 
   $("#footer-button").mouseover(function() {
-    this.src="./resources/images/logo-icon-close-active.png"
+    this.src="./resources/images/logo-icon-active.png"
   }).mouseout(function() {
-    this.src="./resources/images/logo-icon-close.png"
+    this.src="./resources/images/logo-icon.png"
   });
 
 });
