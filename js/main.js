@@ -5,17 +5,17 @@ $(document).ready(() => {
   /* grid fade in on load */
 
   $('#one').fadeIn({ queue: false, duration: 700 });
-  $('#one').animate({ bottom: "25px" }, 300);
+  $('#one').animate({ bottom: "50px" }, 300);
   $('#two').fadeIn({ queue: false, duration: 700 });
-  $('#two').animate({ bottom: "25px" }, 500);
+  $('#two').animate({ bottom: "50px" }, 500);
   $('#three').fadeIn({ queue: false, duration: 700 });
-  $('#three').animate({ bottom: "25px" }, 700);
+  $('#three').animate({ bottom: "50px" }, 700);
   $('#four').fadeIn({ queue: false, duration: 700 });
-  $('#four').animate({ bottom: "25px" }, 800);
+  $('#four').animate({ bottom: "50px" }, 800);
   $('#five').fadeIn({ queue: false, duration: 700 });
-  $('#five').animate({ bottom: "25px" }, 900);
+  $('#five').animate({ bottom: "50px" }, 900);
   $('#six').fadeIn({ queue: false, duration: 700 });
-  $('#six').animate({ bottom: "25px" }, 1000);
+  $('#six').animate({ bottom: "50px" }, 1000);
 
   /* mobile nav dropdown */
 
@@ -25,7 +25,7 @@ $(document).ready(() => {
 
   /* hover states for project grid */
 
-  $('#p1-img').mouseover(function() {
+  /*$('#p1-img').mouseover(function() {
     $('#icon-01').stop().fadeOut()
   }).mouseout(function() {
     $('#icon-01').stop().fadeIn()
@@ -90,21 +90,24 @@ $(document).ready(() => {
     $('#p6-bg').stop().fadeIn()
   }).mouseout(function() {
     $('#p6-bg').stop().fadeOut()
-  });
+  }); */
 
-
+  /* header home button animation */
 
   $("#home-button").mouseover(function() {
     this.src="./resources/images/logo-icon-active.png"
   }).mouseout(function() {
     this.src="./resources/images/logo-icon.png"
   });
+
   /* footer home button animation */
+
   $("#footer-button").mouseover(function() {
     this.src="./resources/images/logo-icon-close-active.png"
   }).mouseout(function() {
     this.src="./resources/images/logo-icon-close.png"
   });
+
 });
 
 /* JS tab functionality */
@@ -124,4 +127,5 @@ function openCity(evt, cityName) {
 }
 
 /* 'clicks' the tab with ID 'defaultOpen' to make it appear on page load */
+
 document.getElementById("defaultOpen").click();
