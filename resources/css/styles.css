@@ -356,11 +356,11 @@ nav ul li a:active {
 }
 
 .portfolio-item {
-  width: 31.4%;
+  width: 30%;
   height: 291px;
   background-color: #eeeeee;
   position: relative;
-  margin-bottom: 1.4%;
+  margin: 1.5% 0;
 }
 
 .portfolio-link {
@@ -506,8 +506,8 @@ nav ul li a:active {
 
 @media only screen and (max-width: 50rem) {
   .portfolio-item {
-    width: 47%;
-    margin-bottom: 1.8%;
+    width: 45%;
+    margin: 1.8% 0;
   }
   .container {
     padding: 1.8% 0;
@@ -516,8 +516,8 @@ nav ul li a:active {
 
 @media only screen and (max-width: 33.125rem) {
   .portfolio-item {
-    width: 94%;
-    margin: 1.5% 0 2.5% 0;
+    width: 92%;
+    margin: 2.5% 0;
   }
   #p2-bg {
     background-image: url('../../resources/images/home/project-hover-bg-wide-02.png');
