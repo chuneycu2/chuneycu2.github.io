@@ -152,19 +152,14 @@ blockquote {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #d2d6db;
+  box-shadow: inset 0 0 5px #ffffff;
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #269af9;
+  background: #c0c0c0;
   border-radius: 50px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
 }
 
 .container {
@@ -366,19 +361,15 @@ nav ul li a:active {
 .portfolio-item {
   width: 30%;
   height: 291px;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   position: relative;
   margin: 1.5% 0;
+  box-shadow: 2px 2px 2px #c0c0c0;
 }
 
 .portfolio-link {
   width: 100%;
   height: 100%;
-}
-
-.portfolio-item img {
-  width: 100px;
-  height: 100px;
 }
 
 .portfolio-item:hover .project-image {
@@ -394,16 +385,25 @@ nav ul li a:active {
 
 .project-image {
   width: 100%;
-  height: 75%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.5;
   transition: 0.4s;
 }
 
+.project-image img {
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  position: absolute;
+  opacity: 1;
+}
+
 .project-label {
-  background-color: #bec3c6;
-  height: 25%;
+  background-color: #c7d2d8;
+  height: 20%;
   width: 100%;
   text-align: center;
   display: flex;
@@ -411,16 +411,16 @@ nav ul li a:active {
   align-items: center;
   justify-content: center;
   transition: 0.4s;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .project-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .skills {
-  font-size: 1rem;
+  font-size: 0.75rem;
+
 }
 
 #p1-bg {
@@ -432,8 +432,6 @@ nav ul li a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../../resources/images/home/project-hover-bg-01.png');
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 #p2-bg {
@@ -445,8 +443,6 @@ nav ul li a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../../resources/images/home/project-hover-bg-02.png');
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 #p3-bg {
@@ -458,8 +454,6 @@ nav ul li a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../../resources/images/home/project-hover-bg-03.png');
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 #p4-bg {
@@ -471,8 +465,6 @@ nav ul li a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../../resources/images/home/project-hover-bg-04.png');
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 #p5-bg {
@@ -484,8 +476,6 @@ nav ul li a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../../resources/images/home/project-hover-bg-05.png');
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 #p6-bg {
@@ -497,8 +487,6 @@ nav ul li a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../../resources/images/home/project-hover-bg-06.png');
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 @media only screen and (max-width: 50rem) {
@@ -508,6 +496,9 @@ nav ul li a:active {
   }
   .container {
     padding: 1.8% 0;
+  }
+  .project-image {
+    opacity: 1;
   }
 }
 
