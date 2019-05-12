@@ -807,6 +807,11 @@ button:hover {
   input, textarea {
     width: 95%;
   }
+  .bio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 43.75rem) {
@@ -823,6 +828,12 @@ button:hover {
   #submission button {
     width: 50%;
     height: 70px;
+  }
+}
+
+@media only screen and (max-width: 20rem) {
+  #submission button {
+    width: 100%;
   }
 }
 
@@ -906,5 +917,20 @@ footer .nav-container {
   }
   .social li a {
     color: #217ded;
+  }
+}
+
+@media only screen and (max-width: 25rem) {
+  footer .desktop-nav li {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 20rem) {
+  footer .desktop-nav li {
+    padding: 2rem 1rem;
+  }
+  h1 {
+    font-size: 1.75rem;
   }
 }
