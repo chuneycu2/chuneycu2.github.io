@@ -174,7 +174,7 @@ blockquote {
 
 .home-container {
   max-width: 50rem;
-  padding: 3.5rem 2rem 7rem 1rem;
+  padding: 3.5rem 2rem 7rem 2rem;
   margin: 0 auto;
 }
 
@@ -220,6 +220,9 @@ blockquote {
     width: 80%;
     padding: 3.5rem 1.5rem;
     margin: 0 auto;
+  }
+  .home-container {
+    padding: 3.5rem 2rem;
   }
 }
 
@@ -420,7 +423,14 @@ nav ul li a:active {
 
 .skills {
   font-size: 0.75rem;
+}
 
+.home-container h3 {
+  padding: 1rem 0;
+}
+
+h3 a {
+  color: #269af9;
 }
 
 #p1-bg {
@@ -489,6 +499,39 @@ nav ul li a:active {
   background-image: url('../../resources/images/home/project-hover-bg-06.png');
 }
 
+#p7-bg {
+  display: block;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../resources/images/home/project-hover-bg-07.png');
+}
+
+#p8-bg {
+  display: block;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../resources/images/home/project-hover-bg-08.png');
+}
+
+#p9-bg {
+  display: block;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../resources/images/home/project-hover-bg-09.png');
+}
+
 @media only screen and (max-width: 50rem) {
   .portfolio-item {
     width: 45%;
@@ -519,6 +562,18 @@ nav ul li a:active {
   #p5-bg {
     background-image: url('../../resources/images/home/project-hover-bg-wide-05.png');
   }
+  #p6-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-06.png');
+  }
+  #p7-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-07.png');
+  }
+  #p8-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-08.png');
+  }
+  #p9-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-09.png');
+  }
 }
 
 @media only screen and (min-width: 87.5rem) {
@@ -533,6 +588,18 @@ nav ul li a:active {
   }
   #p5-bg {
     background-image: url('../../resources/images/home/project-hover-bg-wide-05.png');
+  }
+  #p6-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-06.png');
+  }
+  #p7-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-07.png');
+  }
+  #p8-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-08.png');
+  }
+  #p9-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-09.png');
   }
 }
 
@@ -634,6 +701,23 @@ button:active {
   top: 1px;
 }
 
+.badge-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.badge-grid figure {
+  width: 25%;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.badge-grid figure img {
+  width: 150px;
+  height: 150px;
+}
+
 .project-cta {
   background-color: #269af9;
   text-align: center;
@@ -668,6 +752,15 @@ button:active {
   }
   .hero.half {
     width: 100%;
+  }
+  .badge-grid figure {
+    width: 33.333%;
+    padding: 1.5rem 0;
+  }
+
+  .badge-grid figure img {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -745,6 +838,32 @@ figure img {
   padding-top: 0.75rem;
 }
 
+.resume {
+  text-align: center;
+}
+
+.resume p {
+  text-align: center;
+}
+
+#resumePDF,
+#resumeDOCX {
+  width: 120px;
+  margin: 0.5rem 0 2rem 0;
+}
+
+@media only screen and (max-width: 33.125rem) {
+  .bio img {
+    margin: 1rem 0;
+  }
+  #resumePDF,
+  #resumeDOCX {
+    width: 100px;
+    margin: 0.5rem 1rem 2rem 1rem;
+  }
+
+}
+
 /* Contact page styles */
 
 .form-row {
@@ -789,7 +908,7 @@ textarea[placeholder] {
 }
 
 button:hover {
-  background-color: #269af9;
+  background-color: #6bbcf2;
   transition: 0.5s;
 }
 

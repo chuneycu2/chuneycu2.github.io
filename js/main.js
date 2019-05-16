@@ -16,6 +16,12 @@ $(document).ready(() => {
   $('#project-five').animate({ bottom: "50px" }, 900);
   $('#project-six').fadeIn({ queue: false, duration: 700 });
   $('#project-six').animate({ bottom: "50px" }, 1000);
+  $('#project-seven').fadeIn({ queue: false, duration: 700 });
+  $('#project-seven').animate({ bottom: "50px" }, 1000);
+  $('#project-eight').fadeIn({ queue: false, duration: 700 });
+  $('#project-eight').animate({ bottom: "50px" }, 1000);
+  $('#project-nine').fadeIn({ queue: false, duration: 700 });
+  $('#project-nine').animate({ bottom: "50px" }, 1000);
 
   /* mobile nav dropdown */
 
