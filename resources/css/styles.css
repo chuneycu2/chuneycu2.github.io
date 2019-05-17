@@ -174,7 +174,7 @@ blockquote {
 
 .home-container {
   max-width: 50rem;
-  padding: 3.5rem 2rem 7rem 2rem;
+  padding: 2.75rem 2rem 4rem 2rem;
   margin: 0 auto;
 }
 
@@ -250,20 +250,20 @@ header {
 }
 
 .logo p {
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .logo img {
   padding-right: 0.7rem;
   position: relative;
-  bottom: 14px;
+  bottom: 10.5px;
 }
 
 /* navigation styles */
 
 nav img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 nav a {
