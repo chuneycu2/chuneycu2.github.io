@@ -846,9 +846,13 @@ figure img {
   text-align: center;
 }
 
-#resumePDF,
+#resumePDF {
+  width: 35%;
+  margin: 0.5rem 2rem 2rem 0;
+}
+
 #resumeDOCX {
-  width: 120px;
+  width: 35%;
   margin: 0.5rem 0 2rem 0;
 }
 
@@ -858,7 +862,7 @@ figure img {
   }
   #resumePDF,
   #resumeDOCX {
-    width: 100px;
+    width: 40%;
     margin: 0.5rem 1rem 2rem 1rem;
   }
 
