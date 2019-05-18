@@ -123,6 +123,12 @@ h4 {
 
 /* sitewide display and container styles */
 
+.offset {
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+
 .container {
   width: 99.9%;
   padding: 1.1% 0;
@@ -195,6 +201,11 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+
 }
 
 .nav-container {
@@ -211,11 +222,13 @@ header {
 }
 
 .logo p {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  bottom: 7px;
 }
 
 .logo img {
-  padding-right: 0.7rem;
+  padding-right: 0.75rem;
   position: relative;
   bottom: 10.5px;
 }
@@ -234,10 +247,12 @@ nav a {
 
 nav ul {
   display: flex;
+  position: relative;
+  top: 17px;
 }
 
 nav ul li {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
   text-transform: uppercase;
 }
 
@@ -305,10 +320,11 @@ nav ul li a:active {
 /* headline styles */
 
 .headline {
-  padding-top: 1rem;
+  padding: 4rem 0 2rem 0;
   margin: 0 auto;
   text-align: center;
-  color: white;
+  color: #081c5d;
+  font-weight: bold;
 }
 
 .headline.project {
