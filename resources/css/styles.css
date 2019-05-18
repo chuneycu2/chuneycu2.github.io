@@ -190,7 +190,7 @@ h4 {
 /* header styles */
 
 header {
-  height: 275px;
+  height: 100px;
   background-image: url('../../resources/images/home/header-texture-01.png');
   background-position: center;
   background-repeat: no-repeat;
