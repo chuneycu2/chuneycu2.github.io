@@ -354,9 +354,14 @@ nav ul li a:active {
   height: 100%;
 }
 
-.portfolio-item:hover .project-image {
+.container:hover .project-image {
   transition: 0.4s;
   opacity: 0.5;
+}
+
+.portfolio-item:hover .project-image:hover {
+  opacity: 1.0;
+  transition: 0.4s;
 }
 
 .portfolio-item:hover .project-label {
@@ -373,14 +378,6 @@ nav ul li a:active {
   align-items: center;
   opacity: 1;
   transition: 0.4s;
-}
-
-.project-image img {
-  width: 100px;
-  height: 100px;
-  z-index: 1;
-  position: absolute;
-  opacity: 1;
 }
 
 .project-label {
