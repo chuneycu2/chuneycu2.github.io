@@ -37,11 +37,11 @@ p {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.15rem;
   line-height: 1.25;
 }
 
-@media (min-width: 43.75rem) {
+@media (min-width: 50rem) {
   h1 {
     font-size: 2.4rem;
     line-height: 1.125;
@@ -141,7 +141,7 @@ h4 {
 
 .home-container {
   max-width: 50rem;
-  padding: 2.75rem 2rem 4rem 2rem;
+  padding: 4.75rem 2rem 4rem 2rem;
   margin: 0 auto;
 }
 
@@ -152,7 +152,7 @@ h4 {
 
 .content-container {
   width: 50rem;
-  padding: 3.5rem 1.5rem;
+  padding: 0 1.5rem 2rem 1.5rem;
   margin: 0 auto;
 }
 
@@ -171,21 +171,21 @@ h4 {
 
 @media only screen and (max-width: 56.875rem) {
   .content-container {
-    width: 38rem;
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 43.75rem) {
   .content-container {
-    width: 30rem;
-    padding: 3.5rem 0;
+    width: 80%;
+    padding: 0 2rem 2.5rem 2rem;
   }
 }
 
 @media only screen and (max-width: 33.125rem) {
   .content-container {
     width: 80%;
-    padding: 3.5rem 1.5rem;
+    padding: 0 1rem 2.5rem 1.5rem;
     margin: 0 auto;
   }
   .home-container {
@@ -296,11 +296,13 @@ nav ul li a:active {
   }
   .dropdown-nav {
     position: relative;
+    top: 4px;
     background-color: #269af9;
     width: 100%;
     z-index: 1;
     text-align: center;
     color: white;
+
   }
   .dropdown-nav ul li {
     padding: 1.25rem 0;
@@ -320,7 +322,7 @@ nav ul li a:active {
 /* headline styles */
 
 .headline {
-  padding: 4.25rem 0 2rem 0;
+  padding-top: 4.25rem;
   margin: 0 auto;
   text-align: center;
   color: #081c5d;
@@ -335,7 +337,7 @@ nav ul li a:active {
 
 .grid {
   position: relative;
-  top: 55px;
+  top: 85px;
 }
 
 .portfolio-item {
@@ -566,6 +568,10 @@ nav ul li a:active {
 .content-container p, h2 {
   text-align: left;
   padding: 1rem 0;
+}
+
+#intro {
+  padding: 2.5rem 0 1.5rem 0;
 }
 
 .content-container h3 {

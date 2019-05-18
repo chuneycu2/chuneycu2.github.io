@@ -40,130 +40,106 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-    <div class="headline">
-      <h1>Personal website</h1>
-      <h4>HTML5, CSS, JavaScript, Responsive design</h4>
-    </div>
   </header>
 
   <!-- project content -->
 
-  <div class="content-container center">
-    <img class="hero" src="./resources/images/home/portfolio-overview-01.png" alt="Desktop and mobile views of Teach in the USA microsite" />
-    <p>To showcase my work, I both designed and developed this portfolio from scratch.</p>
-    <h2>Design</h2>
-    <p>I studied a number of online portfolios and styles to gather ideas, then built mockup in Sketch. I settled on a strong header theme with a responsive home page grid that would display six key pieces of work, and a blue color palette for backgrounds, sections and links.</p>
-    <p>Once I had a theme designed, I quickly built a layout for page content in each project. This involved setting breakpoints for a main container class, rem values and padding for recurring elements like paragraphs and image blocks. At this point, I also set up responsive typography styles in my main stylesheet.</p>
-    <img class="hero" src="./resources/images/home/color-palette-header-01.png" alt="Color palette and logo" />
-    <div class="notation">
-      <p>Color palette and final logo icon design</p>
-    </div>
-    <div class="img-row">
-      <div class="img-block">
-        <img src="./resources/images/home/homepage-mockup-01.png" alt="home page wireframe" />
+  <section class="offset">
+    <section class="headline">
+      <h1>Personal website</h1>
+      <h4>HTML5, CSS, JavaScript, Responsive design</h4>
+    </section>
+    <div class="content-container center">
+      <img class="hero" src="./resources/images/home/portfolio-overview-01.png" alt="Desktop and mobile views of Teach in the USA microsite" />
+      <p>To showcase my work, I both designed and developed this portfolio from scratch.</p>
+      <h2>Design</h2>
+      <p>I studied a number of online portfolios and styles to gather ideas, then built mockup in Sketch. I settled on a strong header theme with a responsive home page grid that would display six key pieces of work, and a blue color palette for backgrounds, sections and links.</p>
+      <p>Once I had a theme designed, I quickly built a layout for page content in each project. This involved setting breakpoints for a main container class, rem values and padding for recurring elements like paragraphs and image blocks. At this point, I also set up responsive typography styles in my main stylesheet.</p>
+      <img class="hero" src="./resources/images/home/color-palette-header-01.png" alt="Color palette and logo" />
+      <div class="notation">
+        <p>Color palette and final logo icon design</p>
       </div>
-      <div class="img-block">
-        <img src="./resources/images/home/homepage-mockup-02.png" alt="content page wireframe" />
+      <div class="img-row">
+        <div class="img-block">
+          <img src="./resources/images/home/homepage-mockup-01.png" alt="home page wireframe" />
+        </div>
+        <div class="img-block">
+          <img src="./resources/images/home/homepage-mockup-02.png" alt="content page wireframe" />
+        </div>
       </div>
-    </div>
-    <div class="notation">
-      <p>Early mockups of home page and content pages to get a feel for the overall theme of the site</p>
-    </div>
-    <h2>Development</h2>
-    <p>I started with the home page so I could set up the header and footer styles that would appear on each page together with the project grid. I built the first draft just like the mockup, with a full-width grid of responsive sections that would house project images and an interactive tooltip on hover.</p>
-    <div class="img-row">
-      <div class="img-block">
-        <img src="./resources/images/home/tooltip-mockups-02.png" alt="grid layout testing" />
+      <div class="notation">
+        <p>Early mockups of home page and content pages to get a feel for the overall theme of the site</p>
       </div>
-      <div class="img-block">
-        <img src="./resources/images/home/tooltip-mockups-01.png" alt="hover tooltip mockup" />
+      <h2>Development</h2>
+      <p>I started with the home page so I could set up the header and footer styles that would appear on each page together with the project grid. I built the first draft just like the mockup, with a full-width grid of responsive sections that would house project images and an interactive tooltip on hover.</p>
+      <div class="img-row">
+        <div class="img-block">
+          <img src="./resources/images/home/tooltip-mockups-02.png" alt="grid layout testing" />
+        </div>
+        <div class="img-block">
+          <img src="./resources/images/home/tooltip-mockups-01.png" alt="hover tooltip mockup" />
+        </div>
       </div>
-    </div>
-    <div class="notation">
-      <p>I tested a hover-based tooltip, but decided against it for mobile considerations.</p>
-    </div>
-    <p>I employed flexbox to style the main menus and footer links, using the breakpoints I established along with my typography to set up a display across all device widths. Developing the theme first allowed me to rapidly build each project page once it was done.</p>
-    <h2>Refinement</h2>
-    <p>The project grid was responsive and functional, but even varying background colors didn’t give each project tile the impact I wanted. So I went back to the drawing board.</p>
-    <div class="img-row">
-      <div class="img-block">
-        <img src="./resources/images/home/grid-testing-01.png" alt="grid design mockup" />
+      <div class="notation">
+        <p>I tested a hover-based tooltip, but decided against it for mobile considerations.</p>
       </div>
-      <div class="img-block">
-        <img src="./resources/images/home/grid-testing-02.png" alt="hover states mockup" />
+      <p>I employed flexbox to style the main menus and footer links, using the breakpoints I established along with my typography to set up a display across all device widths. Developing the theme first allowed me to rapidly build each project page once it was done.</p>
+      <h2>Refinement</h2>
+      <p>The project grid was responsive and functional, but even varying background colors didn’t give each project tile the impact I wanted. So I went back to the drawing board.</p>
+      <div class="img-row">
+        <div class="img-block">
+          <img src="./resources/images/home/grid-testing-01.png" alt="grid design mockup" />
+        </div>
+        <div class="img-block">
+          <img src="./resources/images/home/grid-testing-02.png" alt="hover states mockup" />
+        </div>
       </div>
-    </div>
-    <div class="notation">
-      <p>I designed other layouts and hover states that didn't make the cut, but helped envision the final product</p>
-    </div>
-    <p>I redesigned a grid with gutters that would separate each project tile and give it its own space. I did some math and set margins at percentages to achieve a responsive gutter that didn’t require additional classes for rows or individual items.</p>
-    <div class="img-row">
-      <div class="img-block">
-        <img src="./resources/images/home/final-grid-01.png" alt="grid layout testing" />
+      <div class="notation">
+        <p>I designed other layouts and hover states that didn't make the cut, but helped envision the final product</p>
       </div>
-      <div class="img-block">
-        <img src="./resources/images/home/final-grid-02.png" alt="final grid design" />
+      <p>I redesigned a grid with gutters that would separate each project tile and give it its own space. I did some math and set margins at percentages to achieve a responsive gutter that didn’t require additional classes for rows or individual items.</p>
+      <div class="img-row">
+        <div class="img-block">
+          <img src="./resources/images/home/final-grid-01.png" alt="grid layout testing" />
+        </div>
+        <div class="img-block">
+          <img src="./resources/images/home/final-grid-02.png" alt="final grid design" />
+        </div>
       </div>
+      <div class="notation">
+        <p>Gutters and a border radius gave each project tile more impact and space of its own</p>
+      </div>
+      <h2>Version control</h2>
+      <p>I checked out different branches to test versions of the home page to see which performed best. Even with a static site, it was good pracitce to have branches that let me save versions of my code and return to them later if needed.</p>
+      <h2>Optimization</h2>
+      <p>Once I built a full draft of the website, I revisited my code to reduce complexity and add semantics for future reference. I added semantic HTML, partitioned my stylesheet to keep it organized, and optimized all of my page images for maximum performance.</p>
+      <h2>In-development</h2>
+      <p>I am currently developing an alternate home page that displays design work alongside my development work. I have several projects in branding, vector design and print layout that I want to showcase in a separate grid so users can see my full skillset.</p>
     </div>
-    <div class="notation">
-      <p>Gutters and a border radius gave each project tile more impact and space of its own</p>
-    </div>
-    <h2>Version control</h2>
-    <p>I checked out different branches to test versions of the home page to see which performed best. Even with a static site, it was good pracitce to have branches that let me save versions of my code and return to them later if needed.</p>
-    <h2>Optimization</h2>
-    <p>Once I built a full draft of the website, I revisited my code to reduce complexity and add semantics for future reference. I added semantic HTML, partitioned my stylesheet to keep it organized, and optimized all of my page images for maximum performance.</p>
-    <h2>In-development</h2>
-    <p>I am currently developing an alternate home page that displays design work alongside my development work. I have several projects in branding, vector design and print layout that I want to showcase in a separate grid so users can see my full skillset.</p>
-  </div>
 
-  <!-- end project content -->
+    <!-- end project content -->
 
-  <div class="project-cta">
-    <a href="contact.html">
-      <h2 class="center">Get in touch &rarr;</h2>
-    </a>
-  </div>
-
-  <!-- footer -->
-
-  <footer>
-    <nav class="nav-container set-max">
-      <div class="logo">
-        <a href="index.html">
-          <img id="footer-button" src="./resources/images/logo-icon.png" alt="Cyrus Huneycutt" />
-        </a>
-        <p><span>CYRUS HUNEYCUTT</span> <br> Designer | Developer</p>
-      </div>
-      <ul class="desktop-nav">
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <nav class="mobile-footer">
-      <div class="logo">
-        <a href="index.html">
-          <img id="home-button" src="./resources/images/logo-icon.png" alt="Cyrus Huneycutt" />
-        </a>
-        <p><span>CYRUS HUNEYCUTT</span> <br> Designer | Developer</p>
-      </div>
-      <ul class="desktop-nav">
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="social">
-      <ul>
-        <li><a href="https://github.com/chuneycu2" rel="nofollow" target="_blank"><img src="./resources/images/social-github.png" alt="GitHub icon" /></a></li>
-        <li><a href="https://www.linkedin.com/in/chuneycu2/" rel="nofollow" target="_blank"><img src="./resources/images/social-linkedin.png" alt="LinkedIn icon" /></li>
-        <li><a href="contact.html" rel="nofollow"><img src="./resources/images/social-gmail.png" alt="Gmail icon" /></a></li>
-      </ul>
+    <div class="project-cta">
+      <a href="contact.html">
+        <h2 class="center">Get in touch &rarr;</h2>
+      </a>
     </div>
-    <div class="copyright">
-      <p>&copy; 2019 Cyrus Huneycutt</p>
-    </div>
-  </footer>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="social">
+        <ul>
+          <li><a href="https://github.com/chuneycu2" rel="nofollow" target="_blank"><img src="./resources/images/social-github.png" alt="GitHub icon" /></a></li>
+          <li><a href="https://www.linkedin.com/in/chuneycu2/" rel="nofollow" target="_blank"><img src="./resources/images/social-linkedin.png" alt="LinkedIn icon" /></li>
+          <li><a href="contact.html" rel="nofollow"><img src="./resources/images/social-gmail.png" alt="Gmail icon" /></a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2019 Cyrus Huneycutt</p>
+      </div>
+    </footer>
+  </section>
 
   <!-- end page content -->
 
