@@ -338,7 +338,7 @@ nav ul li a:active {
 
 .portfolio-item:hover .project-image {
   transition: 0.4s;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .portfolio-item:hover .project-label {
@@ -353,7 +353,7 @@ nav ul li a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.4s;
 }
 
