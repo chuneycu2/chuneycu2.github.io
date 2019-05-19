@@ -740,34 +740,59 @@ button:active {
 
 /* About page styles */
 
-.bio {
-  display: inline-flex;
+.dual-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 3rem 0;
 }
 
-.bio img {
-  margin-right: 1.5rem;
+.sidebar {
+  width: 200px;
+  padding-right: 2rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 130px;
+}
+
+.sidebar p {
+  font-size: 1rem;
+  padding: 1.25rem 0 0 0;
+}
+
+.about-scroll {
+  width: 75%;
+}
+
+.sidebar img {
+  width: 85%;
   align-self: center;
-  border: 1px solid black;
+  padding-top: 1rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 300px;
+  width: 200px;
 }
 
 .skill-icons {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .skill-icons figure {
-  padding: 1.5rem;
+  padding: 1.5rem 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 figure img {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
 }
 
 .skill-icons figcaption {

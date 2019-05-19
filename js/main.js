@@ -63,6 +63,6 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-/* 'clicks' the tab with ID 'defaultOpen' to make it appear on page load */
+  /* 'clicks' the tab with ID 'defaultOpen' to make it appear on page load */
 
-document.getElementById("defaultOpen").click();
+  document.getElementById("defaultOpen").click();
