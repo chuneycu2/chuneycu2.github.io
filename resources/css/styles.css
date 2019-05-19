@@ -355,18 +355,18 @@ nav ul li a:active {
 }
 
 .container:hover .project-image {
-  transition: 0.4s;
+  transition: 0.5s;
   opacity: 0.5;
 }
 
 .portfolio-item:hover .project-image:hover {
   opacity: 1.0;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .portfolio-item:hover .project-label {
   background-color: #081c5d;
-  transition: 0.4s;
+  transition: 0.5s;
   color: white;
 }
 
