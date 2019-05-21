@@ -575,6 +575,7 @@ nav ul li a:active {
   padding: 1.5rem 0;
   font-weight: bold;
   text-decoration: underline;
+  text-align: left;
 }
 
 .content-container a {
@@ -748,7 +749,7 @@ button:active {
 
 .sidebar {
   width: 200px;
-  padding-right: 2rem;
+  margin-right: 2rem;
   position: sticky;
   position: -webkit-sticky;
   top: 130px;
@@ -771,12 +772,6 @@ button:active {
 
 #mobile-pic {
   display: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 300px;
-  width: 200px;
 }
 
 .skill-icons {
@@ -870,7 +865,20 @@ figure img {
 }
 @media only screen and (max-width: 25.938rem) {
   .skill-icons {
+    justify-content: space-between;
+  }
+  figure img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 21.875rem) {
+  .skill-icons {
     justify-content: center;
+  }
+  figure img {
+    width: 70px;
+    height: 70px;
   }
 }
 
