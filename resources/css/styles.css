@@ -946,6 +946,11 @@ button:hover {
   transition: 0.5s;
 }
 
+#submission {
+  display: flex;
+  align-items: center;
+}
+
 @media only screen and (max-width: 33.125rem) {
   input, textarea {
     width: 95%;
