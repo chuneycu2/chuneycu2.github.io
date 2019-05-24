@@ -148,7 +148,7 @@ h4 {
 
 .home-container {
   max-width: 50rem;
-  padding: 4.75rem 2rem 4rem 2rem;
+  padding: 2.5rem 2rem 4rem 2rem;
   margin: 0 auto;
 }
 
@@ -196,7 +196,7 @@ h4 {
     margin: 0 auto;
   }
   .home-container {
-    padding: 3.5rem 2rem;
+    padding: 2rem 2rem 3.5rem 2rem;
   }
 }
 
@@ -335,7 +335,7 @@ nav ul li a:active {
 /* headline styles */
 
 .headline {
-  padding-top: 4.5rem;
+  padding: 4.5rem 0 2rem 0;
   margin: 0 auto;
   text-align: center;
   color: black;
@@ -345,12 +345,14 @@ nav ul li a:active {
   padding-top: 6.5rem;
 }
 
-/* home page portfolio item grid */
+@media only screen and (max-width: 33.125rem) {
 
-.grid {
-  position: relative;
-  top: 85px;
+  .headline {
+    padding: 4.5rem 0 3rem 0;
+  }
 }
+
+/* home page portfolio item grid */
 
 .portfolio-item {
   width: 30%;
@@ -359,6 +361,7 @@ nav ul li a:active {
   position: relative;
   margin: 1.5% 0;
   box-shadow: 2px 2px 2px #c0c0c0;
+  opacity: 0;
 }
 
 .portfolio-link {
@@ -579,10 +582,6 @@ nav ul li a:active {
   padding: 1rem 0;
 }
 
-#intro {
-  padding: 2.5rem 0 1.5rem 0;
-}
-
 .content-container h3 {
   padding: 1.5rem 0;
   font-weight: bold;
@@ -760,7 +759,7 @@ button:active {
 .dual-container {
   display: flex;
   align-items: flex-start;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
 }
 
 .sidebar {
