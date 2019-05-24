@@ -4,7 +4,7 @@ $(document).ready(() => {
 
   /* grid fade in on load */
 
-  $('#project-one').fadeIn({ queue: false, duration: 700 });
+  /* $('#project-one').fadeIn({ queue: false, duration: 700 });
   $('#project-one').animate({ bottom: "50px" }, 300);
   $('#project-two').fadeIn({ queue: false, duration: 700 });
   $('#project-two').animate({ bottom: "50px" }, 500);
@@ -21,7 +21,17 @@ $(document).ready(() => {
   $('#project-eight').fadeIn({ queue: false, duration: 700 });
   $('#project-eight').animate({ bottom: "50px" }, 1000);
   $('#project-nine').fadeIn({ queue: false, duration: 700 });
-  $('#project-nine').animate({ bottom: "50px" }, 1000);
+  $('#project-nine').animate({ bottom: "50px" }, 1000); */
+
+  $('#project-one').animate({ opacity: 1 }, 500);
+  $('#project-two').animate({ opacity: 1 }, 500);
+  $('#project-three').animate({ opacity: 1 }, 500);
+  $('#project-four').animate({ opacity: 1 }, 500);
+  $('#project-five').animate({ opacity: 1 }, 500);
+  $('#project-six').animate({ opacity: 1 }, 500);
+  $('#project-seven').animate({ opacity: 1 }, 500);
+  $('#project-eight').animate({ opacity: 1 }, 500);
+  $('#project-nine').animate({ opacity: 1 }, 500);
 
   /* mobile nav dropdown */
 
