@@ -4,25 +4,6 @@ $(document).ready(() => {
 
   /* grid fade in on load */
 
-  /* $('#project-one').fadeIn({ queue: false, duration: 700 });
-  $('#project-one').animate({ bottom: "50px" }, 300);
-  $('#project-two').fadeIn({ queue: false, duration: 700 });
-  $('#project-two').animate({ bottom: "50px" }, 500);
-  $('#project-three').fadeIn({ queue: false, duration: 700 });
-  $('#project-three').animate({ bottom: "50px" }, 700);
-  $('#project-four').fadeIn({ queue: false, duration: 700 });
-  $('#project-four').animate({ bottom: "50px" }, 800);
-  $('#project-five').fadeIn({ queue: false, duration: 700 });
-  $('#project-five').animate({ bottom: "50px" }, 900);
-  $('#project-six').fadeIn({ queue: false, duration: 700 });
-  $('#project-six').animate({ bottom: "50px" }, 1000);
-  $('#project-seven').fadeIn({ queue: false, duration: 700 });
-  $('#project-seven').animate({ bottom: "50px" }, 1000);
-  $('#project-eight').fadeIn({ queue: false, duration: 700 });
-  $('#project-eight').animate({ bottom: "50px" }, 1000);
-  $('#project-nine').fadeIn({ queue: false, duration: 700 });
-  $('#project-nine').animate({ bottom: "50px" }, 1000); */
-
   $('#project-one').animate({ opacity: 1 }, 500);
   $('#project-two').animate({ opacity: 1 }, 500);
   $('#project-three').animate({ opacity: 1 }, 500);
@@ -73,6 +54,6 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-  /* 'clicks' the tab with ID 'defaultOpen' to make it appear on page load */
+/* 'clicks' the tab with ID 'defaultOpen' to make it appear on page load */
 
-  document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click();
