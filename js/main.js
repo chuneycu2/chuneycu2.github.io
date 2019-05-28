@@ -1,18 +1,18 @@
 /* jQuery interactions */
 
-$(document).ready(() => {
+$(document).ready(function() {
 
   /* grid fade in on load */
 
-  $('#project-one').animate({ opacity: 1 }, 500);
-  $('#project-two').animate({ opacity: 1 }, 500);
-  $('#project-three').animate({ opacity: 1 }, 500);
-  $('#project-four').animate({ opacity: 1 }, 500);
-  $('#project-five').animate({ opacity: 1 }, 500);
-  $('#project-six').animate({ opacity: 1 }, 500);
-  $('#project-seven').animate({ opacity: 1 }, 500);
-  $('#project-eight').animate({ opacity: 1 }, 500);
-  $('#project-nine').animate({ opacity: 1 }, 500);
+  $('#project-one').animate({ opacity: 1 }, 300);
+  $('#project-two').animate({ opacity: 1 }, 300);
+  $('#project-three').animate({ opacity: 1 }, 300);
+  $('#project-four').animate({ opacity: 1 }, 300);
+  $('#project-five').animate({ opacity: 1 }, 300);
+  $('#project-six').animate({ opacity: 1 }, 300);
+  $('#project-seven').animate({ opacity: 1 }, 300);
+  $('#project-eight').animate({ opacity: 1 }, 300);
+  $('#project-nine').animate({ opacity: 1 }, 300);
 
   /* mobile nav dropdown */
 
