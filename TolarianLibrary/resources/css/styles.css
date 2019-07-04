@@ -938,28 +938,28 @@ label .checkmark:after {
 }
 
 .legal {
-  width: 82px;
+  width: 100px;
   color: white;
   background-color: #538c64;
   text-align: center;
 }
 
 .not_legal {
-  width: 82px;
+  width: 100px;
   color: white;
   background-color: #a0a0a0;
   text-align: center;
 }
 
 .banned {
-  width: 82px;
+  width: 100px;
   color: white;
   background-color: red;
   text-align: center;
 }
 
 .restricted {
-  width: 82px;
+  width: 100px;
   color: white;
   background-color: orange;
   text-align: center;
