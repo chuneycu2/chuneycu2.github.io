@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cyrus Huneycutt | Tolarian Library website</title>
+  <link rel="shortcut icon" href="./resources/images/ch-favicon.ico" type="image/x-icon">
+  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
+  <link href="./resources/css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Oxygen|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140704374-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-140704374-1');
+  </script>
+</head>
+<body>
+
+  <!-- begin page content -->
+
+  <header>
+    <nav class="nav-container set-max">
+      <div class="logo">
+        <a href="index.html">
+          <img id="home-button" src="./resources/images/logo-icon.png" alt="Cyrus Huneycutt" />
+        </a>
+        <p><span>CYRUS HUNEYCUTT</span> <br> Designer | Developer</p>
+      </div>
+      <ul class="desktop-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile-nav">
+      <div class="logo">
+        <a href="index.html"><img src="./resources/images/logo-icon.png" alt="Cyrus Huneycutt" /></a>
+        <p><strong>CYRUS HUNEYCUTT</strong> <br> Designer | Developer</p>
+      </div>
+      <img id="menu-icon" src="./resources/images/menu-icon.svg" alt="hamburger menu icon" />
+    </nav>
+    <div class="dropdown-nav hide">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- begin project content -->
+
+  <section class="offset">
+    <section class="headline">
+      <h1>Tolarian Library website</h1>
+      <h4>JavaScript, jQuery, HTML, CSS</h4>
+    </section>
+    <section class="content-container center">
+      <img class="hero" src="./resources/images/shopify/Shopify-overview.jpg" alt="Desktop and mobile overview of the Participate Shopify storefront" />
+      <a href="https://chuneycu2.github.io/Tolarian-Library/index.html" target="_blank"><button>Visit the site</button></a>
+        <p>I worked with a colleague to build the company’s Shopify storefront. I managed the theme code and website design while my colleague managed photography and new product listings.</p>
+      <h2>Designing the storefront</h2>
+        <p>I saw that Liquid displays HTML elements with logic written in Ruby. I was able to take full control of finer details with existing CSS stylesheets.</p>
+        <p>I envisioned a home page that featured all available products in a responsive grid. Shopify's pre-built theme only allowed us to add three featured items, so I adjusted the theme template code to add more.</p>
+        <div class="img-row">
+          <div class="img-block">
+            <img src="./resources/images/shopify/shopify-old-01.png" alt="Old Shopify storefront design" />
+          </div>
+          <div class="img-block">
+            <img src="./resources/images/shopify/shopify-wireframe-01.png" alt="Wireframe sketch of the product grid and simple menu I wanted" />
+          </div>
+        </div>
+        <div class="notation">
+          <p>An intermediate photo choice worked well, but it didn't mesh with the default menu.</p>
+        </div>
+        <p>I set up a copy of our theme for QA testing and found the sections of code I needed to change. Once I understood how the theme was built, I used existing pieces of code to structure a new home page design.</p>
+        <div class="img-row">
+          <div class="img-block">
+            <img src="./resources/images/shopify/shopify-three-blocks-01.png" alt="Three blocks in Shopify storefront" />
+          </div>
+          <div class="img-block">
+            <img src="./resources/images/shopify/shopify-three-blocks-code-01.png" alt="Code controlling the three product blocks" />
+          </div>
+        </div>
+        <div class="notation">
+          <p>Within a liquid tag, I could add as many new product object copies as we needed</p>
+        </div>
+        <p>The properties inside liquid tags needed to be updated each time a new featured item was created so that the pages and images linked together correctly. I added these new key-value pairs in a JSON file so they would render on screen.</p>
+      <h2>Documentation</h2>
+        <p>After several instances of updating the code on my own, I wrote documentation on the process for my colleague so that he could take ownership of the storefront and free up my time to address other issues.</p>
+      <img class="hero" src="./resources/images/shopify/shopify-documentation-01.png" alt="Snapshot of color-coded documentation written for a design colleague" />
+      <div class="notation">
+        <p>Snapshot of color-coded documentation written for my colleague</p>
+      </div>
+      <h2>Results</h2>
+        <p>Overall, our design upgrades resulted in a cleaner user experience and an easy reference for all products the company had on sale.</p>
+      <img class="hero" src="./resources/images/shopify/shopify-final.png" alt="Final view of the storefront redesign" />
+    </section>
+
+    <!-- contact CTA banner -->
+
+    <section class="project-cta">
+      <a href="contact.html">
+        <h2 class="center">Get in touch &rarr;</h2>
+      </a>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="social">
+        <ul>
+          <li><a href="https://github.com/chuneycu2" rel="nofollow" target="_blank"><img src="./resources/images/social-github.png" alt="GitHub icon" /></a></li>
+          <li><a href="https://www.linkedin.com/in/chuneycu2/" rel="nofollow" target="_blank"><img src="./resources/images/social-linkedin.png" alt="LinkedIn icon" /></li>
+          <li><a href="contact.html" rel="nofollow"><img src="./resources/images/social-gmail.png" alt="Gmail icon" /></a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2019 Cyrus Huneycutt</p>
+      </div>
+    </footer>
+  </section>
+
+  <!-- end page content -->
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+</html>

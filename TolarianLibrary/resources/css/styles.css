@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "Beleren-Bold", sans-serif;
-  src: url('../fonts/Beleren-Bold.ttf');
+  font-family: "Beleren2016-Bold", sans-serif;
+  src: url('../fonts/Beleren2016-Bold.ttf'), format('truetype'),
+       url('../fonts/Beleren2016-Bold.svg'), format('svg'),
+       url('../fonts/Beleren2016-Bold.woff'), format('woff');
 }
 
 @font-face {
@@ -23,7 +25,7 @@ body {
 /* typography */
 
 h1 {
-  font-family: "Beleren-Bold", sans-serif;
+  font-family: "Beleren2016-Bold", sans-serif;
   font-size: 2.25rem;
   color: white;
   line-height: 1.75;
@@ -126,7 +128,7 @@ body.loading .modal {
 }
 
 .home-search input {
-  font-family: "Beleren-Bold", sans-serif;
+  font-family: "Beleren2016-Bold", sans-serif;
   width: 100%;
   font-size: 1.25rem;
   border: none;
@@ -567,7 +569,7 @@ label .checkmark:after {
 .search-button button {
   padding: 0.75rem 3rem;
   background-color: #19359b;
-  font-family: "Beleren-Bold", sans-serif;
+  font-family: "Beleren2016-Bold", sans-serif;
   color: white;
   font-size: 1rem;
   border-radius: 5px;
@@ -683,7 +685,7 @@ label .checkmark:after {
     padding: 0.75rem 3rem;
     width: 100%;
     background-color: #19359b;
-    font-family: "Beleren-Bold", sans-serif;
+    font-family: "Beleren2016-Bold", sans-serif;
     color: white;
     font-size: 1rem;
     border: 1px solid #19359b;
@@ -763,7 +765,7 @@ label .checkmark:after {
 .card-result p:first-child {
   font-size: 1.15rem;
   line-height: 1.15;
-  font-family: "Beleren-Bold", sans-serif;
+  font-family: "Beleren2016-Bold", sans-serif;
 }
 
 .card-result p:last-child {
