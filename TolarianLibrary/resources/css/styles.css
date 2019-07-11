@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Beleren2016-Bold", sans-serif;
-  src: url('../fonts/Beleren2016-Bold.ttf'), format('truetype'),
-       url('../fonts/Beleren2016-Bold.svg'), format('svg'),
-       url('../fonts/Beleren2016-Bold.woff'), format('woff');
+  src: url('../fonts/Beleren2016-Bold.woff'), format('woff'),
+       url('../fonts/Beleren2016-Bold.ttf'), format('truetype'),
+       url('../fonts/Beleren2016-Bold.svg'), format('svg');
 }
 
 @font-face {
