@@ -798,7 +798,6 @@ label .checkmark:after {
 @media only screen and (max-width: 62.5rem) {
   .results-rows {
     justify-content: center;
-    flex-direction: column;
   }
 }
 
