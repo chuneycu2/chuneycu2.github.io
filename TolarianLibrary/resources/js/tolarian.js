@@ -111,6 +111,7 @@ TolarianLibrary.getCards = function() {
         'B': 'ms-b',
         'R': 'ms-r',
         'G': 'ms-g',
+        '0': 'ms-0',
         '1': 'ms-1',
         '2': 'ms-2',
         '3': 'ms-3',
@@ -192,6 +193,7 @@ TolarianLibrary.getCards = function() {
         '{R}': 'ms-r',
         '{G}': 'ms-g',
         '{C}': 'ms-c',
+        '{0}': 'ms-0',
         '{1}': 'ms-1',
         '{2}': 'ms-2',
         '{3}': 'ms-3',
@@ -443,7 +445,6 @@ TolarianLibrary.getCards = function() {
       var rulingsHtml = '';
 
       if (rulings === undefined) {
-        console.log("no rulings");
         var today = new Date();
         var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
         rulingsHtml = rulingsHtml +

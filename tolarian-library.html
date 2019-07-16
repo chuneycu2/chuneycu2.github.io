@@ -54,49 +54,98 @@
 
   <section class="offset">
     <section class="headline">
-      <h1>Tolarian Library website</h1>
+      <h1>Tolarian Library app</h1>
       <h4>JavaScript, jQuery, HTML, CSS</h4>
     </section>
     <section class="content-container center">
-      <img class="hero" src="./resources/images/shopify/Shopify-overview.jpg" alt="Desktop and mobile overview of the Participate Shopify storefront" />
-      <a href="https://chuneycu2.github.io/Tolarian-Library/index.html" target="_blank"><button>Visit the site</button></a>
-        <p>I worked with a colleague to build the company’s Shopify storefront. I managed the theme code and website design while my colleague managed photography and new product listings.</p>
-      <h2>Designing the storefront</h2>
-        <p>I saw that Liquid displays HTML elements with logic written in Ruby. I was able to take full control of finer details with existing CSS stylesheets.</p>
-        <p>I envisioned a home page that featured all available products in a responsive grid. Shopify's pre-built theme only allowed us to add three featured items, so I adjusted the theme template code to add more.</p>
+      <img class="hero" src="./resources/images/tolarian-library/TL-overview.jpg" alt="Desktop and mobile overview of the Tolarian Library app" />
+      <a href="https://chuneycu2.github.io/TolarianLibrary/index.html" target="_blank"><button>Visit the site</button></a>
+        <p>I connected with an API to create an app that renders information about Magic: The Gathering cards, including images, market prices, tournament rulings and external resources.</p>
+      <h2>Version 1.0</h2>
+        <p>I was inspired to build a search engine of my own upon finding the <a href="https://docs.magicthegathering.io/" target="_blank" rel="nofollow">Magic: The Gathering Developers</a> API documentation. Through AJAX requests, the API allows third-party applications to make up to 5000 requests per hour for free. I built a static webpage with a search bar and began testing with the console to get a sense for how the JSON responses were structured.</p>
+        <img class="hero" src="./resources/images/tolarian-library/v01_searchbar.png" alt="Version 01's basic search bar" />
+        <p>Once I’d built the AJAX click handler, I began building a more structured HTML design around it. I wrote functions that looped through the response object and appended chunks of HTML to the page with jQuery when a user made a request through the search bar.</p><img class="hero" src="./resources/images/tolarian-library/v01_functionMap.png" alt="Version 01 data flow" />
+        <div class="notation">
+          <p>Function maps helped me visualize what I was doing and how all the pieces worked together</p>
+        </div>
+        <p>I kept the design simple at first as I wrote the core functionality. My objective for the first version of the app was to render the card’s image, its basic stats and associated tournament rulings all in repeatable modules on the page. Once I had this in place, I would be able to progressively expand the design.</p>
+        <img class="hero" src="./resources/images/tolarian-library/v01_searchresults.jpg" alt="Version 01's HTML rendering of search results" />
+      <h2>Version 2.0</h2>
+        <p>In version 1.0, I was able to append whatever value was in search bar to a single endpoint URL, which would return cards with a full or partial name match. In version 2.0, my goal was to build an advanced search feature that allowed a user to narrow down their search results to certain characteristics, like a card’s cost, colors, print edition or artist.</p>
+        <img class="hero" src="./resources/images/tolarian-library/v02_advancedsearch.jpg" alt="Version 02's advanced search bar" />
+        <p>This process required me to write more JavaScript than before. The API used standard URL query strings, which could be appended together with percent encoding to form a single request. I created a function that looped through all of the values entered and appended them to the endpoint URL as individual parameters. jQuery’s param() method saved me a lot of work here!</p>
         <div class="img-row">
           <div class="img-block">
-            <img src="./resources/images/shopify/shopify-old-01.png" alt="Old Shopify storefront design" />
+            <img src="./resources/images/tolarian-library/v02_advancedsearch_results.jpg" alt="First design of the advanced search feature" />
           </div>
           <div class="img-block">
-            <img src="./resources/images/shopify/shopify-wireframe-01.png" alt="Wireframe sketch of the product grid and simple menu I wanted" />
+            <img src="./resources/images/tolarian-library/v02_advancedsearch_results02.jpg" alt="Working results for the advanced search feature" />
+          </div>
+        </div>
+        <p>I was ambitious with version 2.0 and built features that allowed a user to search for a random card and to open boosters from a selected print edition (boosters are 15-card packs with eleven common cards, three uncommon cards and one rare or mythic card). Unfortunately, the API’s support for these features was incomplete, so I trimmed them out of the scope in later versions.</p>
+      <h2>Version 3.0</h2>
+        <p>Up until version 3.0, the search function immediately appended modules to the page based on the information entered. I wanted to add a feature that appended card images to the page in a grid, which would create a more visually appealing experience. Each card image would act as a jQuery object that, when clicked, would reveal the module for that card and all of its info.</p>
+        <div class="img-row">
+          <div class="img-block">
+            <img src="./resources/images/tolarian-library/v03_resultsgrid.jpg" alt="version 03's image grid design" />
+          </div>
+          <div class="img-block">
+            <img src="./resources/images/tolarian-library/v03_resultsgrid02.jpg" alt="version 03's image grid module on click" />
           </div>
         </div>
         <div class="notation">
-          <p>An intermediate photo choice worked well, but it didn't mesh with the default menu.</p>
+          <p>jQuery’s append() and detatch() methods let the user toggle between their search results and the info module for the card they clicked.</p>
         </div>
-        <p>I set up a copy of our theme for QA testing and found the sections of code I needed to change. Once I understood how the theme was built, I used existing pieces of code to structure a new home page design.</p>
+        <p>By version 3.0, the limitations of the API I was using were beginning to show. I had to create a function that accounted for entries with missing image files, which was not ideal for version 3.0's image grid design. Additionally, cards with multiple print versions were all displayed separately, which muddied the experience. I decided to research other APIs and see if I could make the next version even better.</p>
         <div class="img-row">
           <div class="img-block">
-            <img src="./resources/images/shopify/shopify-three-blocks-01.png" alt="Three blocks in Shopify storefront" />
+            <img src="./resources/images/tolarian-library/v03_resultsgrid03.jpg" alt="version 3.0 limitations" />
           </div>
           <div class="img-block">
-            <img src="./resources/images/shopify/shopify-three-blocks-code-01.png" alt="Code controlling the three product blocks" />
+            <img src="./resources/images/tolarian-library/v03_resultsgrid04.jpg" alt="version 3.0 limitations" />
           </div>
         </div>
         <div class="notation">
-          <p>Within a liquid tag, I could add as many new product object copies as we needed</p>
+          <p>Cards from multiple print runs got repetitive, and many JSON objects had missing image URIs.</p>
         </div>
-        <p>The properties inside liquid tags needed to be updated each time a new featured item was created so that the pages and images linked together correctly. I added these new key-value pairs in a JSON file so they would render on screen.</p>
-      <h2>Documentation</h2>
-        <p>After several instances of updating the code on my own, I wrote documentation on the process for my colleague so that he could take ownership of the storefront and free up my time to address other issues.</p>
-      <img class="hero" src="./resources/images/shopify/shopify-documentation-01.png" alt="Snapshot of color-coded documentation written for a design colleague" />
-      <div class="notation">
-        <p>Snapshot of color-coded documentation written for my colleague</p>
-      </div>
+      <h2>Version 4.0 (current)</h2>
+        <p>After reading its documentation, I made a switch to Scryfall’s API endpoints, which offered all the same features as MtG Developers and more. The first versions were good practice for the final version, because they helped me nail down the basics before I began using the syntax and features of a more complex API.</p>
+        <p>The biggest structural change in the final version was the use of multiple pages instead of one static page. I wanted to create a home page, a separate page for the advanced search options, and a results page where cards would be loaded dynamically. I needed to break up my JavaScript file and keep my workflow organized.</p>
+        <img class="hero" src="./resources/images/tolarian-library/v04_siteMap.jpg" alt="Version 4.0 visual mockup and sitemap" />
+        <div class="notation">
+          <p>Visual mockup samples of version 4.0's main pages I would need to build and bring to life with JavaScript.</p>
+        </div>
+        <p>Once I built the HTML shells that the JavaScript would populate with data in each search result, I began figuring out how to structure the code. I was able to reuse a lot of functions I'd written from previous versions, which helped set a starting foundation.</p>
+        <img class="hero" src="./resources/images/tolarian-library/v04_dataFlow.png" alt="Version 4.0 visual data flow" />
+        <div class="notation">
+          <p>Secondary AJAX requests fire on click when a user selects the card. This keeps waiting time to a minimum, since the program requests only the details it needs for any given search.</p>
+        </div>
+        <p>Additional helper functions were needed to translate data about different parts of a card into HTML. These functions required the most creativity and work. My knowledge of the game helped me when I needed specific test cases or found something missing in my code, like a condition to display dual-faced cards (which have different JSON response structures).</p>
+        <img class="hero" src="./resources/images/tolarian-library/v04_charFunctionMap.png" alt="Version 4.0 visualizeManaCost function map" />
+        <div class="notation">
+          <p>This function requires a regular expression to turn mana costs in a card's JSON response from bracket notation into a string of characters that can be matched to the <a href="https://andrewgioia.github.io/Mana/icons.html" target="_blank">mana icon style set</a> I use to display mana cost symbols.</p>
+        </div>
       <h2>Results</h2>
-        <p>Overall, our design upgrades resulted in a cleaner user experience and an easy reference for all products the company had on sale.</p>
-      <img class="hero" src="./resources/images/shopify/shopify-final.png" alt="Final view of the storefront redesign" />
+        <p>I got feedback from friends who also played the game through each version, which helped me decide on the final structure of the site. Magic is a complex game, and I noticed that many resources on the internet transfer the burden of that complexity onto the user. My goal was to create a site with a simple, linear user experience that performs on desktop, tablet or mobile.</p>
+        <img class="hero" src="./resources/images/tolarian-library/TL_final.jpg" alt="Version 4.0 card grid result" />
+        <div class="img-row">
+          <div class="img-block">
+            <img src="./resources/images/tolarian-library/v04_sample-01.jpg" alt="version 4.0 screenshot" />
+          </div>
+          <div class="img-block">
+            <img src="./resources/images/tolarian-library/v04_sample-02.jpg" alt="version 4.0 screenshot" />
+          </div>
+        </div>
+        <div class="img-row">
+          <div class="img-block">
+            <img src="./resources/images/tolarian-library/v04_sample-03.jpg" alt="version 4.0 screenshot" />
+          </div>
+          <div class="img-block">
+            <img src="./resources/images/tolarian-library/v04_sample-04.jpg" alt="version 4.0 screenshot" />
+          </div>
+        </div>
+      </br>
+      </br>
     </section>
 
     <!-- contact CTA banner -->
