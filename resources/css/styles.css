@@ -498,6 +498,9 @@ nav ul li a:active {
     width: 92%;
     margin: 2.5% 0;
   }
+  #p1-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-wide-01.png');
+  }
   #p2-bg {
     background-image: url('../../resources/images/home/project-hover-bg-wide-02.png');
   }
