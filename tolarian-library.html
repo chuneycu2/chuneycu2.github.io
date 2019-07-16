@@ -82,6 +82,8 @@
             <img src="./resources/images/tolarian-library/v02_advancedsearch_results02.jpg" alt="Working results for the advanced search feature" />
           </div>
         </div>
+      </br>
+      </br>
         <p>I was ambitious with version 2.0 and built features that allowed a user to search for a random card and to open boosters from a selected print edition (boosters are 15-card packs with eleven common cards, three uncommon cards and one rare or mythic card). Unfortunately, the API’s support for these features was incomplete, so I trimmed them out of the scope in later versions.</p>
       <h2>Version 3.0</h2>
         <p>Up until version 3.0, the search function immediately appended modules to the page based on the information entered. I wanted to add a feature that appended card images to the page in a grid, which would create a more visually appealing experience. Each card image would act as a jQuery object that, when clicked, would reveal the module for that card and all of its info.</p>
@@ -109,8 +111,8 @@
           <p>Cards from multiple print runs got repetitive, and many JSON objects had missing image URIs.</p>
         </div>
       <h2>Version 4.0 (current)</h2>
-        <p>After reading its documentation, I made a switch to Scryfall’s API endpoints, which offered all the same features as MtG Developers and more. The first versions were good practice for the final version, because they helped me nail down the basics before I began using the syntax and features of a more complex API.</p>
-        <p>The biggest structural change in the final version was the use of multiple pages instead of one static page. I wanted to create a home page, a separate page for the advanced search options, and a results page where cards would be loaded dynamically. I needed to break up my JavaScript file and keep my workflow organized.</p>
+        <p>After reading its documentation, I made a switch to the <a href="https://scryfall.com/docs/api" target="_blank">Scryfall API</a>, which offered all the same features as M:tG Developers and more. The first versions were good practice for the final version, because they helped me nail down the basics before I began using the syntax and features of a more complex API.</p>
+        <p>The biggest structural change in the final version was the use of multiple pages instead of one static page. I wanted to create a home page, a separate page for the advanced search options (the dropdown panel of version 3.0 had a clunky UX), and a results page where cards would be loaded dynamically. I needed to break up my JavaScript file and keep my workflow more organized as well.</p>
         <img class="hero" src="./resources/images/tolarian-library/v04_siteMap.jpg" alt="Version 4.0 visual mockup and sitemap" />
         <div class="notation">
           <p>Visual mockup samples of version 4.0's main pages I would need to build and bring to life with JavaScript.</p>
@@ -126,7 +128,7 @@
           <p>This function requires a regular expression to turn mana costs in a card's JSON response from bracket notation into a string of characters that can be matched to the <a href="https://andrewgioia.github.io/Mana/icons.html" target="_blank">mana icon style set</a> I use to display mana cost symbols.</p>
         </div>
       <h2>Results</h2>
-        <p>I got feedback from friends who also played the game through each version, which helped me decide on the final structure of the site. Magic is a complex game, and I noticed that many resources on the internet transfer the burden of that complexity onto the user. My goal was to create a site with a simple, linear user experience that performs on desktop, tablet or mobile.</p>
+        <p>Throughout the project, I got feedback from friends who play Magic, which helped me make adjustments and settle on a final design. Magic is a complex game, and I noticed that many resources on the internet transfer the burden of that complexity onto the user. My goal was to create a site with a simple, linear user experience that performs on desktop, tablet or mobile, and lets players quickly find details about any card on the fly.</p>
         <img class="hero" src="./resources/images/tolarian-library/TL_final.jpg" alt="Version 4.0 card grid result" />
         <div class="img-row">
           <div class="img-block">
@@ -145,9 +147,12 @@
           </div>
         </div>
       </br>
+      </br>
       <h2>About the Tolarian Library</h2>
        <p>I named the app "Tolarian Library" after a fictional location in the Magic universe, the Tolarian Academy. The academy was founded by two wizards named Urza and Barrin, who brought students of magic together with the goal of accumulating knowledge to stop an invasion by an extra-planar force, the Phyrexians.</p>
        <p>Since none of the Magic universe is my intellectual property, I created an <a href="https://chuneycu2.github.io/TolarianLibrary/about.html" target="_blank">about page</a> on the site stating my compliance with Wizards of the Coast's Fan Content Policy, as well as my own disclaimers about information the app provides through Scryfall's API.</p>
+     </br>
+     </br>
     </section>
 
     <!-- contact CTA banner -->
