@@ -468,7 +468,8 @@ TolarianLibrary.getCards = function() {
     //renders a card's details on click with the help from the above functions
     function cardDetails(card, printings, rulings) {
 
-      if (card.card_faces) {
+      // condition for double-faced cards
+      if (card.card_faces && card.layout !== 'adventure') {
         var cardFaceFront = card.card_faces[0];
         var cardFaceBack = card.card_faces[1];
 
@@ -562,11 +563,18 @@ TolarianLibrary.getCards = function() {
 
       } else {
 
+        console.log("card layout: " + card.layout);
         var imageUrl = card.image_uris.large;
         var name = card.name;
         var manaCost = card.mana_cost;
         var types = card.type_line;
-        var cardText = card.oracle_text;
+
+        if (card.layout == 'adventure') {
+          var cardText = card.card_faces[0].oracle_text + "</br></br>" + card.card_faces[1].oracle_text;
+        } else {
+          var cardText = card.oracle_text;
+        }
+
         var flavorText = card.flavor_text;
 
         if (flavorText === undefined) {
@@ -677,7 +685,9 @@ TolarianLibrary.getCards = function() {
       //pushes a selected card's printings images to a holding array
       function addPrintsImages(cards) {
         for (var i = 0; i < cards.length; i++) {
-          if (cards[i].card_faces) {
+          if (cards[i].layout == 'adventure') {
+            printingsImages.push(cards[i].image_uris.large);
+          } else if (cards[i].card_faces && cards[i].layout !== 'adventure') {
             printingsImages.push(cards[i].card_faces[0].image_uris.large);
           } else {
             printingsImages.push(cards[i].image_uris.large);
