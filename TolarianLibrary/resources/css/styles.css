@@ -69,6 +69,12 @@ p {
   display: none;
 }
 
+.selected {
+  background-color: #223151 !important;
+  color: white;
+}
+
+
 /* modal loading gif div */
 
 .modal {
@@ -88,13 +94,25 @@ body.loading .modal {
 
 /* scrollbar styles */
 
+/* width */
 ::-webkit-scrollbar {
-  display: none;
+width: 8px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #d7dde2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
 
 @media only screen and (max-width: 32rem) {
   ::-webkit-scrollbar {
-    display: none;
+
   }
 }
 
@@ -906,6 +924,10 @@ label .checkmark:after {
   display: flex;
   align-items: center;
   border-bottom: 0.5px solid #bcbcbc;
+}
+
+.spec-row.name p {
+  flex: 1;
 }
 
 .spec-row:last-child {

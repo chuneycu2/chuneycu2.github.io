@@ -525,8 +525,8 @@ TolarianLibrary.getCards = function() {
         "       </div>" +
         "    </div>" +
         "    <div class='card-details'>" +
-        "      <div class='spec-row'>" +
-        "        <p><i id='frontside' class='ms ms-dfc-day'></i> " + name + " // <i id='backside' class='ms ms-dfc-night'></i> " + nameBack + "</p>" +
+        "      <div class='spec-row name'>" +
+        "        <p><i id='frontside' class='ms ms-dfc-day'></i> " + name + " //</br> <i id='backside' class='ms ms-dfc-night'></i> " + nameBack + "</p>" +
                  visualizeManaCost(manaCost) +
         "      </div>" +
         "      <div class='spec-row'>" +
@@ -650,13 +650,14 @@ TolarianLibrary.getCards = function() {
 
     var currentLocation;
 
+    // CARD DETAILS click function
     $cardResult.on('click', function() {
       currentLocation = window.pageYOffset;
 
       var tcgPlayerID = $(this).attr('id');
       var oracleID = $(this).attr('id');
 
-      //finds the correct printings url to query for the selected card
+      // finds the correct printings url to query for the selected card
       function printIndex() {
         var printIndex = 0;
         for (var i = 0; i < cards.length; i++) {
@@ -669,7 +670,7 @@ TolarianLibrary.getCards = function() {
         }
       }
 
-      //finds the correct index for the selected card's rulings, since ajax returns rulings objects out of order in the cardRulings array
+      // finds the correct index for the selected card's rulings, since ajax returns rulings objects out of order in the cardRulings array
       function findRuling(i) {
         for (var r = 0; r < cardRulings.length; r++) {
           if (cardRulings[r][0] === i) {
@@ -682,7 +683,7 @@ TolarianLibrary.getCards = function() {
         }
       }
 
-      //pushes a selected card's printings images to a holding array
+      // pushes a selected card's printings images to a holding array
       function addPrintsImages(cards) {
         for (var i = 0; i < cards.length; i++) {
           if (cards[i].layout == 'adventure') {
@@ -698,7 +699,7 @@ TolarianLibrary.getCards = function() {
       $cardResult.detach();
       $search.hide();
 
-      //printings request made on click per card
+      // PRINTINGS ajax request
       $.ajax({
         url: printingsUrls[printIndex()],
         type: 'GET',
@@ -716,16 +717,24 @@ TolarianLibrary.getCards = function() {
         }
       });
 
+      // IMAGE PRINTING click handler
       $(document).on('click', 'div.printing', function() {
         var $defaultImg = $('#defaultImg');
         var $printId = $(this).attr('id');
+        var $selectedImg = $('.print-info.selected');
+
+        $selectedImg.removeClass('selected');
+        $(this).find('div.print-info').addClass('selected');
         $defaultImg.attr('src', printingsImages[$printId]);
+        window.scrollTo(0, 0);
       });
 
+      // FRONT SIDE image click handler (for dual-faced cards)
       $(document).on('click', '#frontside', function() {
         var $defaultImg = $('#defaultImg');
         $defaultImg.attr('src', flipCardFaces[0]);
       })
+      // BACK SIDE image click handler (for dual-faced cards)
       $(document).on('click', '#backside', function() {
         var $defaultImg = $('#defaultImg');
         $defaultImg.attr('src', flipCardFaces[1]);
@@ -733,6 +742,7 @@ TolarianLibrary.getCards = function() {
 
     });
 
+    // BACK BUTTON click handler
     $(document).on('click', '#back', function() {
       printingsImages = [];
       flipCardFaces = [];
@@ -744,7 +754,7 @@ TolarianLibrary.getCards = function() {
 
   }
 
-  //renders html for 404 errors
+  // 404 ERROR render funnction
   function noResults() {
     var html404 =
 
@@ -757,13 +767,14 @@ TolarianLibrary.getCards = function() {
     $cardList.append(html404);
   }
 
-  //ajax holding arrays
+  // HOLDING ARRAYS for ajax responses
   var printingsUrls = [];
   var rulingsUrls = [];
   var cardRulings = [];
   var printingsImages = [];
   var flipCardFaces = [];
 
+  // BASIC SEARCH arguments
   var normalSearch = {
     url: scryfallAPI + TolarianLibrary.getNameParam("name"),
     type: 'GET',
@@ -774,7 +785,6 @@ TolarianLibrary.getCards = function() {
       }
     },
     success: function(response) {
-      //console.log(response.data);
       $search.removeClass('hide');
       renderCardImages(response.data);
       renderCardDetails(response.data);
@@ -785,6 +795,7 @@ TolarianLibrary.getCards = function() {
       }
     }
   };
+  // ADVANCED SEARCH arguments
   var advancedSearch = {
     url: scryfallAdvancedSearch + TolarianLibrary.getScryfallParams(),
     type: 'GET',
@@ -807,7 +818,9 @@ TolarianLibrary.getCards = function() {
     }
   }
 
-  //finds correct rulings for a card since ajax returns ruling data asynchronously
+  // RULINGS function
+    // called on ajax success to avoid asychronicity
+    // should re-investigate how this works
   function rulingsCallback(r) {
     return function(response) {
       cardRulings.push([
@@ -816,9 +829,11 @@ TolarianLibrary.getCards = function() {
     }
   }
 
-  //make the ajax request by checking the URL
+  //sets the URL as a variable so the search type conditional can check for parameters
   var urlTest = window.location.search;
 
+  // SEARCH BY TYPE - BASIC or ADVANCED
+    // if the URL starts with a ?name= parameter, run the BASIC SEARCH
   if (urlTest.startsWith("?name=")) {
     $.ajax(normalSearch).done(function() {
       for (var r = 0; r < rulingsUrls.length; r++) {
@@ -830,6 +845,7 @@ TolarianLibrary.getCards = function() {
         });
       }
     })
+  // otherwise, run the ADVANCED SEARCH
   } else {
     $.ajax(advancedSearch).done(function() {
       for (var r = 0; r < rulingsUrls.length; r++) {
