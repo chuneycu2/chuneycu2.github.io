@@ -472,10 +472,6 @@ TolarianLibrary.getCards = function() {
       if (card.card_faces && card.layout !== 'adventure') {
         var cardFaceFront = card.card_faces[0];
         var cardFaceBack = card.card_faces[1];
-
-        flipCardFaces.push(card.card_faces[0].image_uris.large);
-        flipCardFaces.push(card.card_faces[1].image_uris.large);
-
         var imageUrl = cardFaceFront.image_uris.large;
         var imageUrlBack = cardFaceBack.image_uris.large;
         var name = cardFaceFront.name;
@@ -526,7 +522,8 @@ TolarianLibrary.getCards = function() {
         "    </div>" +
         "    <div class='card-details'>" +
         "      <div class='spec-row name'>" +
-        "        <p><i id='frontside' class='ms ms-dfc-day'></i> " + name + " //</br> <i id='backside' class='ms ms-dfc-night'></i> " + nameBack + "</p>" +
+        "        <img id='flipside' src='resources/images/card-flip-icon.png'>" +
+        "        <p>" + name + " //</br>" + nameBack + "</p>" +
                  visualizeManaCost(manaCost) +
         "      </div>" +
         "      <div class='spec-row'>" +
@@ -563,7 +560,6 @@ TolarianLibrary.getCards = function() {
 
       } else {
 
-        console.log("card layout: " + card.layout);
         var imageUrl = card.image_uris.large;
         var name = card.name;
         var manaCost = card.mana_cost;
@@ -690,6 +686,7 @@ TolarianLibrary.getCards = function() {
             printingsImages.push(cards[i].image_uris.large);
           } else if (cards[i].card_faces && cards[i].layout !== 'adventure') {
             printingsImages.push(cards[i].card_faces[0].image_uris.large);
+            flipCardFaces.push(cards[i].card_faces[1].image_uris.large)
           } else {
             printingsImages.push(cards[i].image_uris.large);
           }
@@ -715,6 +712,10 @@ TolarianLibrary.getCards = function() {
             window.scrollTo(0, 0);
           }
         }
+      }).then(function() {
+        // SELECTED CLASS ADDED to most recent (top) printing
+        var $topPrinting = $('div.print-info').first();
+        $topPrinting.addClass('selected');
       });
 
       // IMAGE PRINTING click handler
@@ -729,17 +730,18 @@ TolarianLibrary.getCards = function() {
         window.scrollTo(0, 0);
       });
 
-      // FRONT SIDE image click handler (for dual-faced cards)
-      $(document).on('click', '#frontside', function() {
+      // CARD FACES click handler (for dual-faced cards)
+      $(document).on('click', '#flipside', function() {
         var $defaultImg = $('#defaultImg');
-        $defaultImg.attr('src', flipCardFaces[0]);
-      })
-      // BACK SIDE image click handler (for dual-faced cards)
-      $(document).on('click', '#backside', function() {
-        var $defaultImg = $('#defaultImg');
-        $defaultImg.attr('src', flipCardFaces[1]);
-      })
+        var $selected = $('div.selected');
+        var $selectedId = $selected.parent().attr('id');
 
+        if ($defaultImg.attr('src') == flipCardFaces[$selectedId]) {
+          $defaultImg.attr('src', printingsImages[$selectedId]);
+        } else {
+          $defaultImg.attr('src', flipCardFaces[$selectedId]);
+        }
+      })
     });
 
     // BACK BUTTON click handler
@@ -806,7 +808,7 @@ TolarianLibrary.getCards = function() {
       }
     },
     success: function(response) {
-      console.log(response.data);
+      //console.log(response.data);
       $search.removeClass('hide');
       renderCardImages(response.data);
       renderCardDetails(response.data);
