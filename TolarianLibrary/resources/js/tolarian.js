@@ -589,7 +589,7 @@ TolarianLibrary.getCards = function() {
         "<section class='result'>" +
         "  <div class='info-row'>" +
         "    <div class='card-image'>" +
-        "      <img id='defaultImg' src=" + imageUrl + " alt=" + name + " />" +
+        "      <img id='defaultImg' src='" + imageUrl + "' alt='" + name + "' />" +
         "       <div class='resource-links'>" +
         "        <a href=" + card.related_uris.edhrec + " target='_blank'>" +
         "        <div class='resource-button'>" +
