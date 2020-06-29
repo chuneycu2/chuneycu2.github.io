@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  // autofocus on the home search input (for <IE9)
+  $('#search-input').focus();
+
   //sets a click event on the magnifying glass icon
   $('#search-button').on('click', function() {
     var searchValue = $('#search-input').val();
