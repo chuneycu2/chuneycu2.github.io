@@ -693,6 +693,13 @@ TolarianLibrary.getCards = function() {
         }
       }
 
+      // pushes a selected card's artists to a holding array
+      function addArtists(cards) {
+        for (var i = 0; i < cards.length; i++) {
+          printingsArtists.push(cards[i].artist);
+        }
+      }
+
       $cardResult.detach();
       $search.hide();
 
@@ -705,6 +712,7 @@ TolarianLibrary.getCards = function() {
         for (var index = 0; index < cards.length; index++) {
           if (tcgPlayerID == cards[index].tcgplayer_id || oracleID == cards[index].oracle_id) {
             addPrintsImages(response.data);
+            addArtists(response.data);
 
             var cardHTML = cardDetails(cards[index], response.data, findRuling(index));
             $cardList.append(cardHTML);
@@ -719,15 +727,22 @@ TolarianLibrary.getCards = function() {
       });
 
       // IMAGE PRINTING click handler
+      // Also handles ARTIST
       $(document).on('click', 'div.printing', function() {
         var $defaultImg = $('#defaultImg');
         var $printId = $(this).attr('id');
+        var $artistId = $(this).attr('id');
         var $selectedImg = $('.print-info.selected');
+        var $selectedArtist = $('#artist');
 
+        // change image to selected image
         $selectedImg.removeClass('selected');
         $(this).find('div.print-info').addClass('selected');
         $defaultImg.attr('src', printingsImages[$printId]);
         window.scrollTo(0, 0);
+
+        // change artist to selected artists
+        $selectedArtist[0].innerHTML = "Illustrated by " + printingsArtists[$artistId];
       });
 
       // CARD FACES click handler (for dual-faced cards)
@@ -775,6 +790,7 @@ TolarianLibrary.getCards = function() {
   var cardRulings = [];
   var printingsImages = [];
   var flipCardFaces = [];
+  var printingsArtists = [];
 
   // BASIC SEARCH arguments
   var normalSearch = {
@@ -808,7 +824,7 @@ TolarianLibrary.getCards = function() {
       }
     },
     success: function(response) {
-      //console.log(response.data);
+      console.log(response.data);
       $search.removeClass('hide');
       renderCardImages(response.data);
       renderCardDetails(response.data);
