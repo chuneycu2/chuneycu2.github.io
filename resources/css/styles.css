@@ -11,11 +11,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Oxygen", sans-serif;
 }
 
-@viewport {
-  zoom: 1.0;
-  width: device-width;
-}
-
 /* typography, courtesy of http://typecast.com/ */
 
 body {
@@ -119,7 +114,7 @@ h4 {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: none
+  box-shadow: none;
   border-radius: 10px;
 }
 
@@ -144,6 +139,10 @@ h4 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   flex: 1;
+}
+
+.container.projects {
+  padding-bottom: 4rem;
 }
 
 .home-container {
@@ -228,10 +227,13 @@ header {
   align-items: center;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
 .logo p {
   font-size: 1rem;
-  position: relative;
-  bottom: 5px;
   font-family: "Oxygen", sans-serif;
 }
 
@@ -335,7 +337,7 @@ nav ul li a:active {
 /* headline styles */
 
 .headline {
-  padding: 4.5rem 0 2rem 0;
+  padding: 4.5rem 1rem 2rem 1rem;
   margin: 0 auto;
   text-align: center;
   color: black;
@@ -345,10 +347,17 @@ nav ul li a:active {
   padding-top: 6.5rem;
 }
 
+.headline.company h4 {
+  line-height: 1.3;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 1rem 0 0 0;
+}
+
 @media only screen and (max-width: 33.125rem) {
 
   .headline {
-    padding: 4.5rem 0 3rem 0;
+    padding: 4.5rem 1rem 3rem 1rem;
   }
 }
 
@@ -462,6 +471,26 @@ nav ul li a:active {
   background-image: url('../../resources/images/home/project-hover-bg-09.png');
 }
 
+#p-relias-bg {
+  background-image: url('../../resources/images/home/project-hover-bg-relias.png');
+}
+
+#p-participate-bg {
+  background-image: url('../../resources/images/home/project-hover-bg-participate.png');
+}
+#p-vif-bg {
+  background-image: url('../../resources/images/home/project-hover-bg-vif.png');
+}
+#p-relias-site-bg {
+  background-image: url('../../relias/resources/images/project-hover-bg-relias.png');
+}
+#p-nursemk-bg {
+  background-image: url('../../relias/resources/images/project-hover-bg-nursemk.png');
+}
+#p-wceiblog-bg {
+  background-image: url('../../relias/resources/images/project-hover-bg-wceiblog.png');
+}
+
 #p1-bg,
 #p2-bg,
 #p3-bg,
@@ -470,7 +499,13 @@ nav ul li a:active {
 #p6-bg,
 #p7-bg,
 #p8-bg,
-#p9-bg {
+#p9-bg,
+#p-relias-bg,
+#p-participate-bg,
+#p-vif-bg,
+#p-relias-site-bg,
+#p-nursemk-bg,
+#p-wceiblog-bg {
   display: block;
   z-index: 0;
   width: 100%;
@@ -525,6 +560,24 @@ nav ul li a:active {
   #p9-bg {
     background-image: url('../../resources/images/home/project-hover-bg-wide-09.png');
   }
+  #p-relias-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-relias-wide.png');
+  }
+  #p-participate-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-participate-wide.png');
+  }
+  #p-vif-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-vif-wide.png');
+  }
+  #p-relias-site-bg {
+    background-image: url('../../relias/resources/images/project-hover-bg-relias-wide.png');
+  }
+  #p-nursemk-bg {
+    background-image: url('../../relias/resources/images/project-hover-bg-wide-nursemk.png');
+  }
+  #p-wceiblog-bg {
+    background-image: url('../../relias/resources/images/project-hover-bg-wide-wceiblog.png');
+  }
 }
 
 @media only screen and (min-width: 87.5rem) {
@@ -551,6 +604,24 @@ nav ul li a:active {
   }
   #p9-bg {
     background-image: url('../../resources/images/home/project-hover-bg-wide-09.png');
+  }
+  #p-relias-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-relias-wide.png');
+  }
+  #p-participate-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-participate-wide.png');
+  }
+  #p-vif-bg {
+    background-image: url('../../resources/images/home/project-hover-bg-vif-wide.png');
+  }
+  #p-relias-site-bg {
+    background-image: url('../../relias/resources/images/project-hover-bg-relias-wide.png');
+  }
+  #p-nursemk-bg {
+    background-image: url('../../relias/resources/images/project-hover-bg-wide-nursemk.png');
+  }
+  #p-wceiblog-bg {
+    background-image: url('../../relias/resources/images/project-hover-bg-wide-wceiblog.png');
   }
 }
 
@@ -725,7 +796,7 @@ button:active {
 .tab {
   padding-top: 2rem;
   overflow: hidden;
-  background-color: ##eeeeee;
+  background-color: #eeeeee;
   display: flex;
   justify-content: space-between;
 }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyrus Huneycutt | Nurse Mediakit</title>
+    <link rel="shortcut icon" href="./../resources/images/ch-favicon.ico" type="image/x-icon">
+    <link href="./../resources/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="./../resources/css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140704374-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140704374-1');
+    </script>
+    <script src="./../js/jquery.min.js"></script>
+    <script type="text/javascript" src="./../js/main.js"></script>
+</head>
+<body>
+
+<!-- begin page content -->
+
+<header>
+    <nav class="nav-container set-max">
+        <div class="logo">
+            <a href="/" class="logo-link">
+                <img id="home-button" src="./../resources/images/logo-icon.png" alt="Cyrus Huneycutt" />
+                <p><span>CYRUS HUNEYCUTT</span> <br> Front-End Developer</p>
+            </a>
+        </div>
+        <ul class="desktop-nav">
+            <li><a href="../about">About</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="../contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="mobile-nav">
+        <div class="logo">
+            <a href="/"><img src="./../resources/images/logo-icon.png" alt="Cyrus Huneycutt" /></a>
+            <p>CYRUS HUNEYCUTT <br> Front-End Developer</p>
+        </div>
+        <img id="menu-icon" src="./../resources/images/menu-icon.svg" alt="hamburger menu icon" />
+    </nav>
+    <div class="dropdown-nav hide">
+        <ul>
+            <li><a href="../about">About</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="../contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="offset">
+
+    <section class="headline">
+        <h1>Advertise.nurse.com</h1>
+        <h4>PHP, HTML5, CSS/Sass, Bootstrap, JS, jQuery</h4>
+    </section>
+    <section class="content-container">
+
+        <img class="hero" src="./resources/images/nursemk_overview.png" alt="Advertise.nurse.com home page desktop and mobile view" />
+        <p>Advertise.nurse.com is a subdomain that supports Nurse.com's B2C advertising and product placement efforts for Relias's nursing audience. I used my experience with component-driven design to work with UX designers and build a new lightweight Wordpress theme that marketers could easily customize.</p>
+
+        <h2>Theme build</h2>
+        <p>As part of a previous company acquisition, the site was built on a licensed page builder theme with too much feature bloat for what I needed to accomplish. I abandoned it and built a child theme from scratch in order to focus on speed and essentials.</p>
+        <div class="img-row">
+            <div class="img-block">
+                <img src="../relias/resources/images/nursemk-old.png" alt="Mediakit old design" />
+            </div>
+            <div class="img-block">
+                <img src="../relias/resources/images/nursemk-new.png" alt="Mediakit new design" />
+            </div>
+        </div>
+        <div class="notation">
+            <p>The old mediakit theme (left) and the new rebranded theme I built (right)</p>
+        </div>
+        <p>In house UX teams delivered mockups and a full design spec for the site, which allowed me to focus on breaking apart the design into logical chunks and scoping components to build.</p>
+        <div class="img-row">
+            <div class="img-block">
+                <img src="../relias/resources/images/nursemk-newsletter.png" alt="Mediakit component samples" />
+            </div>
+            <div class="img-block">
+                <img src="../relias/resources/images/nursemk-products.png" alt="Mediakit component samples" />
+            </div>
+        </div>
+        <div class="notation">
+            <p>Nurse.com has seen more than one brand realignment, all of which were easily accommodated by the flexible child theme I built</p>
+        </div>
+
+        <h2>Optimization and automation</h2>
+        <p>The theme build included a plugin audit, and I was able to uninstall several unneeded plugins to improve overall performance. In some cases, I was able to replace a plugin’s functionality with my own lighter-weight code.</p>
+        <div class="img-row">
+            <div class="img-block">
+                <img src="../relias/resources/images/nursemk-readtime-blog.png" alt="blog readtime callout" />
+            </div>
+            <div class="img-block">
+                <img src="../relias/resources/images/nursemk-readtime-code.png" alt="blog readtime code snippet" />
+            </div>
+        </div>
+        <div class="notation">
+            <p>A blog post read time feature was achievable with 9 lines of PHP, no plugin needed (<a href="https://gist.github.com/chuneycu2/cdb97fff3137f17f6749eb0f21a7250a" target="_blank">get it here</a>)</p>
+        </div>
+
+        <p>Because my team included Wordpress plugins in version control, updating plugins every sprint became a repetitive task. I wrote a bash script that developers could use for any Wordpress installation to automatically update plugins and make commits on a feature branch with a single terminal command.</p>
+
+    </section>
+
+    <!-- end project content / contact banner CTA -->
+
+    <section class="project-cta">
+        <a href="contact">
+            <h2 class="center">Get in touch &rarr;</h2>
+        </a>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="social">
+            <ul>
+                <li><a href="https://github.com/chuneycu2" rel="nofollow" target="_blank"><img src="./resources/images/social-github.png" alt="GitHub icon" /></a></li>
+                <li><a href="https://www.linkedin.com/in/chuneycu2/" rel="nofollow" target="_blank"><img src="./resources/images/social-linkedin.png" alt="LinkedIn icon" /></li>
+                <li><a href="contact.html" rel="nofollow"><img src="./resources/images/social-gmail.png" alt="Gmail icon" /></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy;2024 Cyrus Huneycutt</p>
+        </div>
+    </footer>
+</section>
+<script>
+    $("#footer-button").mouseover(function() {
+        this.src="./resources/images/logo-icon-active.png"
+    }).mouseout(function() {
+        this.src="./resources/images/logo-icon.png"
+    });
+</script>
+</body>
+</html>

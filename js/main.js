@@ -22,10 +22,10 @@ $(document).ready(function() {
 
   /* header home button animation */
 
-  $("#home-button").mouseover(function() {
-    this.src="./resources/images/logo-icon-active.png"
+  $(".logo-link").mouseover(function() {
+    $("#home-button")[0].src="./resources/images/logo-icon-active.png"
   }).mouseout(function() {
-    this.src="./resources/images/logo-icon.png"
+    $("#home-button")[0].src="./resources/images/logo-icon.png"
   });
 
   /* footer home button animation */
@@ -53,7 +53,3 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
-/* 'clicks' the tab with ID 'defaultOpen' to make it appear on page load */
-
-document.getElementById("defaultOpen").click();
