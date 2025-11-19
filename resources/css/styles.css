@@ -321,7 +321,7 @@ nav ul li a:active {
   }
   .dropdown-nav ul li {
     padding: 1.25rem 0;
-    border-bottom: 1px solid #4a5266;
+    /*border-bottom: 1px solid #4a5266;*/
   }
   .dropdown-nav ul li a {
     color: white;
@@ -364,13 +364,21 @@ nav ul li a:active {
 /* home page portfolio item grid */
 
 .portfolio-item {
-  width: 30%;
-  height: 291px;
+  width: 45%;
+  height: 350px;
   background-color: #ffffff;
   position: relative;
   margin: 1.5% 0;
   box-shadow: 2px 2px 2px #c0c0c0;
   opacity: 0;
+}
+
+.portfolio-item.relias {
+  width: 30%;
+  height: 291px;
+}
+.portfolio-item.netapp {
+  margin: 0;
 }
 
 .portfolio-link {
@@ -471,10 +479,18 @@ nav ul li a:active {
   background-image: url('../../resources/images/home/project-hover-bg-09.png');
 }
 
+#p-instaclustr-bg {
+  background-image: url('../../netapp/resources/project-hover-bg-instaclustr-wide.png');
+}
+#p-spot-bg {
+  background-image: url('../../netapp/resources/project-hover-bg-spot-wide.webp');
+}
+#p-netapp-bg {
+  background-image: url('../../netapp/resources/project-hover-bg-netapp-wide.webp');
+}
 #p-relias-bg {
   background-image: url('../../resources/images/home/project-hover-bg-relias.png');
 }
-
 #p-participate-bg {
   background-image: url('../../resources/images/home/project-hover-bg-participate.png');
 }
@@ -505,7 +521,10 @@ nav ul li a:active {
 #p-vif-bg,
 #p-relias-site-bg,
 #p-nursemk-bg,
-#p-wceiblog-bg {
+#p-wceiblog-bg,
+#p-instaclustr-bg,
+#p-spot-bg,
+#p-netapp-bg {
   display: block;
   z-index: 0;
   width: 100%;
@@ -559,6 +578,12 @@ nav ul li a:active {
   }
   #p9-bg {
     background-image: url('../../resources/images/home/project-hover-bg-wide-09.png');
+  }
+  #p-instaclustr-bg {
+    background-image: url('../../netapp/resources/project-hover-bg-instaclustr-wide.png');
+  }
+  #p-netapp-bg {
+    background-image: url('../../netapp/resources/project-hover-bg-netapp-wide.webp');
   }
   #p-relias-bg {
     background-image: url('../../resources/images/home/project-hover-bg-relias-wide.png');
@@ -1097,6 +1122,14 @@ footer {
 
 .copyright p {
   font-size: 0.85rem;
+}
+
+.copyright .disclaimer {
+  color: #f1f1f1;
+  font-size: 0.75rem;
+  font-style: italic;
+  margin: 1rem auto 0 auto;
+  max-width: 600px;
 }
 
 @media only screen and (max-width: 36.875rem) {

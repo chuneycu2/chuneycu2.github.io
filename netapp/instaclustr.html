@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyrus Huneycutt | Instaclustr.com</title>
+    <link rel="shortcut icon" href="./../resources/images/ch-favicon.ico" type="image/x-icon">
+    <link href="./../resources/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="./../resources/css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140704374-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140704374-1');
+    </script>
+    <script src="./../js/jquery.min.js"></script>
+    <script type="text/javascript" src="./../js/main.js"></script>
+</head>
+<body>
+
+<!-- begin page content -->
+
+<header>
+    <nav class="nav-container set-max">
+        <div class="logo">
+            <a href="/" class="logo-link">
+                <img id="home-button" src="./../resources/images/logo-icon.png" alt="Cyrus Huneycutt" />
+                <p><span>CYRUS HUNEYCUTT</span> <br> Front-End Developer</p>
+            </a>
+        </div>
+        <ul class="desktop-nav">
+            <li><a href="../about">About</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="../contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="mobile-nav">
+        <div class="logo">
+            <a href="/"><img src="./../resources/images/logo-icon.png" alt="Cyrus Huneycutt" /></a>
+            <p>CYRUS HUNEYCUTT <br> Front-End Developer</p>
+        </div>
+        <img id="menu-icon" src="./../resources/images/menu-icon.svg" alt="hamburger menu icon" />
+    </nav>
+    <div class="dropdown-nav hide">
+        <ul>
+            <li><a href="../about">About</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="../contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="offset">
+
+    <section class="headline">
+        <h1>Instaclustr.com</h1>
+        <h4>PHP 8, HTML5, CSS/Sass JS/jQuery, Bootstrap, NPM</h4>
+    </section>
+    <section class="content-container">
+
+        <img class="hero" src="../netapp/resources/instaclustr-overview.webp" alt="instaclustr.com home page desktop and mobile view" />
+        <p>Instaclustr is a database management company that ensures scalable, reliable data delivery and seamless integration between open source technologies. I worked to rebuild and rebrand Instaclustr's main domain for improved performance and SEO, brand alignment with NetApp, and generative engine optimization in the growing era of AI.</p>
+
+        <h2>Netapp brand alignment</h2>
+        <p>As part of an acquisition by NetApp, the site was built on a dated theme that was inflexible and poorly optimized. Before redesigning the front end, I set up a development pipeline to utilize a CSS preprocessor and other automation tools through Gulp.js, enabling me to rapidly develop styling and templating for the new theme.</p>
+        <div class="img-row">
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-old.png" alt="Instaclustr old design" />
+            </div>
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-new.png" alt="Instaclustr new design" />
+            </div>
+        </div>
+        <div class="notation">
+            <p>The old Instaclustr theme (left) and the new rebranded theme I built (right)</p>
+        </div>
+        <p>I collaborated with an in-house design team to review mockups and provide developer feedback that would ensure new features were scalable and on-brand. I used the full design specs they delivered to scope and build components with Advanced Custom Fields (ACF) in a new child theme.</p>
+        <div class="img-row">
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-globe.png" alt="Instaclustr globe stats component" />
+            </div>
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-customers.png" alt="Instaclustr customers links hero" />
+            </div>
+        </div>
+        <div class="img-row">
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-app-management.png" alt="Instaclustr app management animation" />
+            </div>
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-professional-services.png" alt="Instaclustr professional services portal" />
+            </div>
+        </div>
+        <div class="notation">
+            <p>New components reflected NetApp's core brand with a spark of individuality</p>
+        </div>
+        <p>Deep experience with ACF allowed me to summarize features into repeatable sets of fields that made components both customizable for developers and straightforward for non-technical editors.</p>
+        <div class="img-row">
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-acf-fields-2.png" alt="Instaclustr ACF field design" />
+            </div>
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-acf-fields-1.png" alt="Instaclustr ACF component view" />
+            </div>
+        </div>
+        <div class="notation">
+            <p>Each component features options for fine-tuning to eliminate the need for constant code deployments.</p>
+        </div>
+        <h2>New features</h2>
+        <p>Instaclustr has a robust pricing API with node costs across data centers and regions. I accessed this API with RESTful principles so that I could program an optimized pricing page that would quickly and safely serve results to users.</p>
+        <div class="img-block" style="padding-top:32px;">
+            <img src="../netapp/resources/instaclustr-pricing.png" alt="Instaclustr pricing options" />
+        </div>
+        <div class="notation">
+            <p>The previous build copied all the API's JSON into HTML on page load, creating markup that was megabytes in weight. I wrote scripts to handle API data properly for better performance.</p>
+        </div>
+        <p>Instaclustr.com features a documentation area that is managed by an internal developer relations team. I worked with this team during the rebrand to accommodate their feedback and ensure that their detailed work was accessible and easy to navigate within a nested sidebar menu.</p>
+        <div class="img-block" style="padding:32px 0;">
+            <img src="../netapp/resources/instaclustr-docs.png" alt="Instaclustr documentation" />
+        </div>
+        <h2>Speed and performance</h2>
+        <p>Prior to my work on the site, instaclustr.com was poorly-optimized and had never passed Google's Core Web Vitals. As part of the rebrand, I implemented features across the codebase that improved average page load speeds from 6-7s to 1-2s, achieving passing scores for the best rankings boost in Google's algorithm.</p>
+        <div class="img-row">
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-submenu.png" alt="Instaclustr submenu icons" />
+            </div>
+            <div class="img-block">
+                <img src="../netapp/resources/instaclustr-cwv-2025.png" alt="Instaclustr CWV scores" />
+            </div>
+        </div>
+        <div class="notation">
+            <p>(left) A few lines of JS keep submenu icons from loading till the menu is opened, lowering page weight on load.</br>(right) Due to my work in 2024, 2025 has been instaclustr.com's first passing year for Core Web Vitals.</p>
+        </div>
+        <h2>Generative search optimization (GEO)</h2>
+        <p>I worked closely with an SEO agency to optimize content across the site for LLM consumption, improving visibility across popular AI tools and boosting traffic. With site performance as a foundation, I published 10-15 keyword-focused education guides a month that tripled AI engine engagement on our site in 2025.</p>
+        <div class="img-block" style="padding-top:32px;">
+            <img src="../netapp/resources/instaclustr-ed-guide.png" alt="Instaclustr ed guide" />
+        </div>
+        <div class="notation">
+            <p>The template I built for education guides is optimized for LLM consumption.</p>
+        </div>
+        <p>While user behaviors are changing in the evolving era of AI, the lightweight theme I built enabled me to quickly adapt to algorithm updates and capitalize on new trends. My work in collaboration with the team produced clear results:</p>
+        <ul style="padding-bottom: 32px;">
+            <li>We increased organic traffic by 22% in a quarter by adapting quickly to Google's core update in June 2025</li>
+            <li>We achieved 50% visibility in Google's AI mode in Q3 (twice that of Amazon in October 2025)</li>
+            <li>Instaclustr's education center traffic increased by 10x overall in 2025</li>
+        </ul>
+
+    </section>
+
+    <!-- end project content / contact banner CTA -->
+
+    <section class="project-cta">
+        <a href="../contact">
+            <h2 class="center">Get in touch &rarr;</h2>
+        </a>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="social">
+            <ul>
+                <li><a href="https://github.com/chuneycu2" rel="nofollow" target="_blank"><img src="./resources/social-github.png" alt="GitHub icon" /></a></li>
+                <li><a href="https://www.linkedin.com/in/chuneycu2/" rel="nofollow" target="_blank"><img src="./resources/social-linkedin.png" alt="LinkedIn icon" /></li>
+                <li><a href="/contact" rel="nofollow"><img src="./resources/social-gmail.png" alt="Gmail icon" /></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="disclaimer"><em>All trademarks, logos, and brand names are the property of their respective owners. All company, product, and service names used herein are for identification purposes only. Use of these names, trademarks, and brands does not imply endorsement.</em></p>
+        </div>
+    </footer>
+</section>
+<script>
+    $("#footer-button").mouseover(function() {
+        this.src="./resources/images/logo-icon-active.png"
+    }).mouseout(function() {
+        this.src="./resources/images/logo-icon.png"
+    });
+</script>
+</body>
+</html>

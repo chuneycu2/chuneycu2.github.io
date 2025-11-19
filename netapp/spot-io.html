@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyrus Huneycutt | Instaclustr.com</title>
+    <link rel="shortcut icon" href="./../resources/images/ch-favicon.ico" type="image/x-icon">
+    <link href="./../resources/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="./../resources/css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140704374-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140704374-1');
+    </script>
+    <script src="./../js/jquery.min.js"></script>
+    <script type="text/javascript" src="./../js/main.js"></script>
+</head>
+<body>
+
+<!-- begin page content -->
+
+<header>
+    <nav class="nav-container set-max">
+        <div class="logo">
+            <a href="/" class="logo-link">
+                <img id="home-button" src="./../resources/images/logo-icon.png" alt="Cyrus Huneycutt" />
+                <p><span>CYRUS HUNEYCUTT</span> <br> Front-End Developer</p>
+            </a>
+        </div>
+        <ul class="desktop-nav">
+            <li><a href="../about">About</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="../contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="mobile-nav">
+        <div class="logo">
+            <a href="/"><img src="./../resources/images/logo-icon.png" alt="Cyrus Huneycutt" /></a>
+            <p>CYRUS HUNEYCUTT <br> Front-End Developer</p>
+        </div>
+        <img id="menu-icon" src="./../resources/images/menu-icon.svg" alt="hamburger menu icon" />
+    </nav>
+    <div class="dropdown-nav hide">
+        <ul>
+            <li><a href="../about">About</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="../contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="offset">
+
+    <section class="headline">
+        <h1>Spot.io</h1>
+        <h4>PHP 8, HTML5, CSS/Sass JS/jQuery, Bootstrap, NPM</h4>
+    </section>
+    <section class="content-container">
+
+        <img class="hero" src="../netapp/resources/spot-overview.png" alt="spot.io home page desktop and mobile view" />
+        <p>Paragraph</p>
+
+        <h2>H2</h2>
+        <p>Paragraph</p>
+        <div class="img-row">
+            <div class="img-block">
+                <img src="../relias/resources/images/nursemk-old.png" alt="Mediakit old design" />
+            </div>
+            <div class="img-block">
+                <img src="../relias/resources/images/nursemk-new.png" alt="Mediakit new design" />
+            </div>
+        </div>
+        <div class="notation">
+            <p>The old mediakit theme (left) and the new rebranded theme I built (right)</p>
+        </div>
+
+    </section>
+
+    <!-- end project content / contact banner CTA -->
+
+    <section class="project-cta">
+        <a href="../contact">
+            <h2 class="center">Get in touch &rarr;</h2>
+        </a>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="social">
+            <ul>
+                <li><a href="https://github.com/chuneycu2" rel="nofollow" target="_blank"><img src="/resources/social-github.png" alt="GitHub icon" /></a></li>
+                <li><a href="https://www.linkedin.com/in/chuneycu2/" rel="nofollow" target="_blank"><img src="/resources/social-linkedin.png" alt="LinkedIn icon" /></li>
+                <li><a href="/contact" rel="nofollow"><img src="/resources/social-gmail.png" alt="Gmail icon" /></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="disclaimer"><em>All trademarks, logos, and brand names are the property of their respective owners. All company, product, and service names used herein are for identification purposes only. Use of these names, trademarks, and brands does not imply endorsement.</em></p>
+        </div>
+    </footer>
+</section>
+<script>
+    $("#footer-button").mouseover(function() {
+        this.src="./resources/images/logo-icon-active.png"
+    }).mouseout(function() {
+        this.src="./resources/images/logo-icon.png"
+    });
+</script>
+</body>
+</html>
