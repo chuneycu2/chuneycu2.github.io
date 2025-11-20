@@ -57,26 +57,37 @@
 
     <section class="headline">
         <h1>Spot.io</h1>
-        <h4>PHP 8, HTML5, CSS/Sass JS/jQuery, Bootstrap, NPM</h4>
+        <h4>PHP 8, HTML5, CSS/Sass, JS/jQuery, Bootstrap, NPM</h4>
     </section>
     <section class="content-container">
 
         <img class="hero" src="../netapp/resources/spot-overview.png" alt="spot.io home page desktop and mobile view" />
-        <p>Paragraph</p>
+        <p>Spot by NetApp was a suite of cloud-native tools built to optimize cloud infrastructure and lower container costs with analytics and monitoring. In my time at NetApp, I ran spot.io as the lead developer to improve the dev pipeline, act as a liaison between siloed teams, and coordinate the handoff of the web property to Flexera in January 2025.</p>
 
-        <h2>H2</h2>
-        <p>Paragraph</p>
+        <h2>Streamlined development</h2>
+        <p>My success as lead developer involved acting as a liaison between an external development agency and non-technical internal teams. I took over the deployment pipeline, filled a gap between multiple teams, and led weekly check-ins to keep all stakeholders in alignment with new and ongoing site initiatives.</p>
         <div class="img-row">
             <div class="img-block">
-                <img src="../relias/resources/images/nursemk-old.png" alt="Mediakit old design" />
+                <img src="../netapp/resources/spot-filtering.png" alt="Spot filtering for case studies" />
             </div>
             <div class="img-block">
-                <img src="../relias/resources/images/nursemk-new.png" alt="Mediakit new design" />
+                <img src="../netapp/resources/spot-finops.png" alt="Spot FinOps page" />
             </div>
         </div>
         <div class="notation">
-            <p>The old mediakit theme (left) and the new rebranded theme I built (right)</p>
+            <p>A new filtering feature I implemented (left) and a redesigned FinOps page I built (right)</p>
         </div>
+        <h2>Sale to Flexera</h2>
+        <div class="img-block" style="padding-top:32px;">
+            <img src="../netapp/resources/flexera-spot.png" alt="Flexera Spot logo lockup" />
+        </div>
+        <p>In January 2025, Spot was sold to Flexera, an Illinois-based software company. My role in the divestiture included the following:</p>
+        <ul>
+            <li>Mapping out an order of operations for the web property handoff that accounted for legal deadlines and expectations from both NetApp and Flexera</li>
+            <li>Leading calls with stakeholders from NetApp and Flexera to field questions, set schedules for phasing out company tools, and manage integrations with various teams affected by the sale</li>
+            <li>Working closely with Flexera's developers throughout to answer questions and guide them through the site's codebase to make the handoff seamless</li>
+            <li>Running a final code deployment the night of the legal sale to rebrand spot.io and update the database with Flexera's updates before coordinating the domain transfer.</li>
+        </ul>
 
     </section>
 
@@ -93,9 +104,9 @@
     <footer>
         <div class="social">
             <ul>
-                <li><a href="https://github.com/chuneycu2" rel="nofollow" target="_blank"><img src="/resources/social-github.png" alt="GitHub icon" /></a></li>
-                <li><a href="https://www.linkedin.com/in/chuneycu2/" rel="nofollow" target="_blank"><img src="/resources/social-linkedin.png" alt="LinkedIn icon" /></li>
-                <li><a href="/contact" rel="nofollow"><img src="/resources/social-gmail.png" alt="Gmail icon" /></a></li>
+                <li><a href="https://github.com/chuneycu2" rel="nofollow" target="_blank"><img src="./resources/social-github.png" alt="GitHub icon" /></a></li>
+                <li><a href="https://www.linkedin.com/in/chuneycu2/" rel="nofollow" target="_blank"><img src="./resources/social-linkedin.png" alt="LinkedIn icon" /></li>
+                <li><a href="/contact" rel="nofollow"><img src="./resources/social-gmail.png" alt="Gmail icon" /></a></li>
             </ul>
         </div>
         <div class="copyright">
@@ -104,10 +115,10 @@
     </footer>
 </section>
 <script>
-    $("#footer-button").mouseover(function() {
-        this.src="./resources/images/logo-icon-active.png"
+    $(".logo-link").mouseover(function() {
+        $("#home-button")[0].src="../resources/images/logo-icon-active.png"
     }).mouseout(function() {
-        this.src="./resources/images/logo-icon.png"
+        $("#home-button")[0].src="../resources/images/logo-icon.png"
     });
 </script>
 </body>

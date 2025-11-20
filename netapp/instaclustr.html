@@ -57,11 +57,19 @@
 
     <section class="headline">
         <h1>Instaclustr.com</h1>
-        <h4>PHP 8, HTML5, CSS/Sass JS/jQuery, Bootstrap, NPM</h4>
+        <h4>PHP 8, HTML5, CSS/Sass, JS/jQuery, Bootstrap, NPM</h4>
     </section>
     <section class="content-container">
 
         <img class="hero" src="../netapp/resources/instaclustr-overview.webp" alt="instaclustr.com home page desktop and mobile view" />
+        <h2>Highlights</h2>
+        <div class="highlights">
+            <ul>
+                <li>Increased organic traffic by <span style="color: #269af9;">22% in a single quarter</span> by adapting quickly to Google's core update in June 2025</li>
+                <li>Achieved <span style="color: #269af9;">50% greater visibility</span> in Google's AI mode in Q3 2025 (twice that of Amazon in October 2025)</li>
+                <li>Instaclustr's education center traffic increased by <span style="color: #269af9;">10x overall</span> throughout 2025</li>
+            </ul>
+        </div>
         <p>Instaclustr is a database management company that ensures scalable, reliable data delivery and seamless integration between open source technologies. I worked to rebuild and rebrand Instaclustr's main domain for improved performance and SEO, brand alignment with NetApp, and generative engine optimization in the growing era of AI.</p>
 
         <h2>Netapp brand alignment</h2>
@@ -142,7 +150,7 @@
         <div class="notation">
             <p>The template I built for education guides is optimized for LLM consumption.</p>
         </div>
-        <p>While user behaviors are changing in the evolving era of AI, the lightweight theme I built enabled me to quickly adapt to algorithm updates and capitalize on new trends. My work in collaboration with the team produced clear results:</p>
+        <p>While user behaviors are changing as AI tools evolve, the lightweight theme I built enabled me to quickly adapt to algorithm updates and capitalize on new trends. My work in collaboration with the team produced clear results:</p>
         <ul style="padding-bottom: 32px;">
             <li>We increased organic traffic by 22% in a quarter by adapting quickly to Google's core update in June 2025</li>
             <li>We achieved 50% visibility in Google's AI mode in Q3 (twice that of Amazon in October 2025)</li>
@@ -175,10 +183,10 @@
     </footer>
 </section>
 <script>
-    $("#footer-button").mouseover(function() {
-        this.src="./resources/images/logo-icon-active.png"
+    $(".logo-link").mouseover(function() {
+        $("#home-button")[0].src="../resources/images/logo-icon-active.png"
     }).mouseout(function() {
-        this.src="./resources/images/logo-icon.png"
+        $("#home-button")[0].src="../resources/images/logo-icon.png"
     });
 </script>
 </body>

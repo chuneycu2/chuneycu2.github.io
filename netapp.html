@@ -57,7 +57,7 @@
     <section class="headline company">
         <h1>NetApp, Inc.</h1>
         <h4>NetApp, Inc. is an American data infrastructure company that provides unified data storage, integrated data services, and cloud operations solutions to enterprise customers.</h4>
-        <h4>In my time at the company, I acted as the lead developer for the public marketing websites of two NetApp acquisitions, Spot by NetApp and NetApp Instaclustr. I collaborated with teams across NetApp for various initiatives on both sites, including a complex divestiture and a full theme rebrand.</h4>
+        <h4>In my time at the company, I acted as the lead developer for the public marketing websites of two NetApp acquisitions, NetApp Instaclustr and Spot by NetApp. I collaborated with teams across NetApp for various initiatives on both sites, including a full theme rebrand and a coordinated divestiture.</h4>
     </section>
 
     <section class="container set-max projects">
@@ -109,6 +109,12 @@
         </div>
     </footer>
 </section>
-
+<script>
+    $(".logo-link").mouseover(function() {
+        $("#home-button")[0].src="./resources/images/logo-icon-active.png"
+    }).mouseout(function() {
+        $("#home-button")[0].src="./resources/images/logo-icon.png"
+    });
+</script>
 </body>
 </html>

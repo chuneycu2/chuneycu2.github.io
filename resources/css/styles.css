@@ -1155,3 +1155,14 @@ footer {
     font-size: 1.75rem;
   }
 }
+
+.highlights {
+  background-color: white;
+  box-shadow: 0px 5px 15px rgba(150, 174, 198, 0.2);
+  margin: 24px 0;
+}
+.highlights h3 {
+  font-weight: normal;
+  padding: 1.5rem 3rem 0 3rem;
+  text-decoration: none;
+}

@@ -22,11 +22,11 @@ $(document).ready(function() {
 
   /* header home button animation */
 
-  $(".logo-link").mouseover(function() {
+/*  $(".logo-link").mouseover(function() {
     $("#home-button")[0].src="./resources/images/logo-icon-active.png"
   }).mouseout(function() {
     $("#home-button")[0].src="./resources/images/logo-icon.png"
-  });
+  });*/
 
   /* footer home button animation */
 
